@@ -116,7 +116,7 @@ export default function Contact() {
                   name="name"
                   required
                   aria-required="true"
-                  className="w-full border rounded-md px-4 py-2"
+                  className="w-full border rounded-md px-4 py-2 bg-white"
                 />
               </div>
               <div>
@@ -144,7 +144,7 @@ export default function Contact() {
                   id="email"
                   name="email"
                   required
-                  className="w-full border rounded-md px-4 py-2"
+                  className="w-full border rounded-md px-4 py-2 bg-white"
                 />
               </div>
               <div>
@@ -173,7 +173,7 @@ export default function Contact() {
                   type="text"
                   required
                   rows="4"
-                  className="w-full border rounded-md px-4 py-2"
+                  className="w-full border rounded-md px-4 py-2 bg-white"
                 ></textarea>
               </div>
               <button

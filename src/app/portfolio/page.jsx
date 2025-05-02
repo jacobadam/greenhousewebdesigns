@@ -45,7 +45,7 @@ export default function Portfolio() {
               <img
                 src={imgSrc}
                 alt={altText}
-                className="h-80 w-full object-cover relative z-0 filter brightness-70 rounded-xl"
+                className="h-80 w-full object-cover relative z-0 filter brightness-90 rounded-xl"
               />
 
               <div className="absolute bottom-0 left-0 z-10 py-7 px-6 flex justify-between flex-col transition-all duration-500 transform translate-y-full group-hover:translate-y-0 group-hover:w-full group-hover:h-full group-hover:bg-black/50 rounded-xl">

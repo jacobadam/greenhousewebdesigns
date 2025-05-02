@@ -86,7 +86,7 @@ export default function Services() {
                         <h2 className="mb-4 text-2xl lg:text-3xl tracking-tight font-bold text-gray-900 dark:text-white">
                           Performance Optimization
                         </h2>
-                        <p className="mb-4 font-light dark:text-white">
+                        <p className="mb-4 font-light text-black dark:text-white">
                           This includes a full assessment of your current
                           website to identify key areas for improvement. During
                           a detailed feedback session, I’ll gather your specific
@@ -113,7 +113,7 @@ export default function Services() {
                         <h2 className="mb-4 text-2xl lg:text-3xl tracking-tight font-bold text-gray-900 dark:text-white">
                           Custom Built Website
                         </h2>
-                        <p className="mb-4 font-light dark:text-white">
+                        <p className="mb-4 font-light text-black dark:text-white">
                           I’ll work closely with you to understand your vision
                           and requirements during a comprehensive planning
                           session. From there, I’ll create a fully optimized
@@ -138,7 +138,7 @@ export default function Services() {
                         <h2 className="mb-4 text-2xl lg:text-3xl tracking-tight font-bold text-gray-900 dark:text-white">
                           Custom Built Website and Full Content Package
                         </h2>
-                        <p className="mb-4 font-light dark:text-white">
+                        <p className="mb-4 font-light text-black dark:text-white">
                           This comprehensive package includes everything in the
                           custom build service plus professionally crafted
                           content for every page. All content will align with

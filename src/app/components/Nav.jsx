@@ -6,7 +6,7 @@ import Link from "next/link";
 import dynamic from "next/dynamic";
 import HamburgerMenu from "./HamburgerMenu";
 
-const DarkthemeToggle = dynamic(() => import("./DarkModeToggle"), {
+const DarkThemeToggle = dynamic(() => import("./DarkModeToggle"), {
   ssr: false,
 });
 
@@ -68,7 +68,7 @@ export default function NavBar() {
         </div>
 
         <div className="flex items-center gap-2">
-          <DarkthemeToggle />
+          <DarkThemeToggle />
           <HamburgerMenu
             isOpen={isMobileMenuOpen}
             setIsOpen={setIsMobileMenuOpen}

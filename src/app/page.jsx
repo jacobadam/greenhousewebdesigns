@@ -1,10 +1,10 @@
 "use client";
 
-import HomeHero from "../../components/HomeHero";
-import HomeServices from "../../components/HomeServices.jsx";
-import HomeBenefits from "../../components/HomeBenefits.jsx";
-import HomeContact from "../../components/HomeContact.jsx";
-import HomePortfolio from "../../components/HomePortfolio.jsx";
+import HomeHero from "./components/HomeHero";
+import HomeServices from "./components/HomeServices.jsx";
+import HomeBenefits from "./components/HomeBenefits.jsx";
+import HomeContact from "./components/HomeContact.jsx";
+import HomePortfolio from "./components/HomePortfolio.jsx";
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
 

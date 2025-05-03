@@ -4,7 +4,7 @@ import { useTheme } from "next-themes";
 import { motion } from "motion/react";
 import { BsFillCloudyFill, BsStarFill } from "react-icons/bs";
 
-const DarkthemeToggle = () => {
+const DarkModeToggle = () => {
   const { theme, setTheme } = useTheme();
 
   return (
@@ -170,4 +170,4 @@ const Clouds = () => {
   );
 };
 
-export default DarkthemeToggle;
+export default DarkModeToggle;

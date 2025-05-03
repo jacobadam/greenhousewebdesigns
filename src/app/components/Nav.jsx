@@ -24,6 +24,10 @@ export default function NavBar() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
@@ -63,16 +67,41 @@ export default function NavBar() {
           })}
         </div>
 
-        <div className="flex items-center gap-2">
+        <div className="flex flex-row justify-center items-center opacity-100">
           <DarkModeToggle />
-          <HamburgerMenu
-            isOpen={isMobileMenuOpen}
-            setIsOpen={setIsMobileMenuOpen}
-            links={navLinks}
-            pathname={pathname}
-          />
+          <div className="lg:hidden opacity-100">
+            <HamburgerMenu
+              isMenuOpen={isMobileMenuOpen}
+              onToggle={() => setIsMobileMenuOpen((prev) => !prev)}
+            />
+          </div>
         </div>
       </div>
+
+      {isMobileMenuOpen && (
+        <div className="lg:hidden bg-transparent backdrop-blur opacity-100">
+          <ul className="flex flex-col items-left space-y-4 py-4 opacity-100 text-left">
+            {navLinks.map((link) => (
+              <li key={link.href} className="opacity-100">
+                <Link
+                  href={link.href}
+                  className={`text-sm lg:text-base font-medium hover:font-bold transition-all duration-500 opacity-100 ${
+                    pathname === link.href
+                      ? "text-[#6fa96f] dark:text-indigo-500"
+                      : "text-white"
+                  }`}
+                  onClick={() => {
+                    scrollToTop();
+                    toggleMobileMenu();
+                  }}
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </nav>
   );
 }

@@ -3,12 +3,8 @@
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import dynamic from "next/dynamic";
+import DarkModeToggle from "./DarkModeToggle";
 import HamburgerMenu from "./HamburgerMenu";
-
-const DarkThemeToggle = dynamic(() => import("./DarkModeToggle"), {
-  ssr: false,
-});
 
 export default function NavBar() {
   const pathname = usePathname();
@@ -68,7 +64,7 @@ export default function NavBar() {
         </div>
 
         <div className="flex items-center gap-2">
-          <DarkThemeToggle />
+          <DarkModeToggle />
           <HamburgerMenu
             isOpen={isMobileMenuOpen}
             setIsOpen={setIsMobileMenuOpen}

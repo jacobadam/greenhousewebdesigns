@@ -15,7 +15,6 @@ const DarkModeToggle = () => {
     >
       <button
         onClick={() => {
-          console.log("Theme toggled!");
           setTheme(resolvedTheme === "dark" ? "light" : "dark");
         }}
         className={`p-1 w-16 rounded-full flex shadow-md relative bg-gradient-to-b ${

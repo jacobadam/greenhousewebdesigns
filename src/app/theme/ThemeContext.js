@@ -3,7 +3,7 @@
 import React from "react";
 import dynamic from "next/dynamic";
 
-const NextThemesProvider = dynamic(
+const ClientThemeProvider = dynamic(
   () => import("next-themes").then((e) => e.ThemeProvider),
   {
     ssr: false,
@@ -11,5 +11,5 @@ const NextThemesProvider = dynamic(
 );
 
 export default function ThemeProvider({ children, ...props }) {
-  return <NextThemesProvider {...props}>{children}</NextThemesProvider>;
+  return <ClientThemeProvider {...props}>{children}</ClientThemeProvider>;
 }

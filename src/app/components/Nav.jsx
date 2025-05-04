@@ -39,10 +39,10 @@ export default function NavBar() {
 
   return (
     <nav
-      className={`bg-black fixed top-0 z-20 overflow-hidden border-white/10 bg-gradient-to-br from-white/20 to-white/5 backdrop-blur px-4 transition-all duration-300 w-full md:w-auto ${
+      className={`bg-black fixed top-0 z-20 overflow-hidden border-white/10 bg-gradient-to-br from-white/20 to-white/5 backdrop-blur px-4 transition-all duration-300 w-auto ${
         isScrolled
           ? "left-0 right-0"
-          : "mx-auto md:left-6 md:right-6 md:top-6 md:rounded-2xl"
+          : "mx-auto left-6 right-6 top-6 rounded-2xl"
       }`}
     >
       <div className="flex items-center justify-between">

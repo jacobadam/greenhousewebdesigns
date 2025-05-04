@@ -3,20 +3,9 @@
 import { useTheme } from "next-themes";
 import { motion } from "motion/react";
 import { BsFillCloudyFill, BsStarFill } from "react-icons/bs";
-import { useEffect, useState } from "react";
 
 const DarkModeToggle = () => {
-  const { theme, setTheme } = useTheme();
-
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) {
-    return null;
-  }
+  const { resolvedTheme, setTheme } = useTheme();
 
   return (
     <div
@@ -25,9 +14,12 @@ const DarkModeToggle = () => {
       }
     >
       <button
-        onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+        onClick={() => {
+          console.log("Theme toggled!");
+          setTheme(resolvedTheme === "dark" ? "light" : "dark");
+        }}
         className={`p-1 w-16 rounded-full flex shadow-md relative bg-gradient-to-b ${
-          theme === "light"
+          resolvedTheme === "light"
             ? " justify-start from-indigo-600 to-indigo-400"
             : "justify-end from-blue-500 to-sky-300"
         }`}
@@ -42,17 +34,17 @@ const DarkModeToggle = () => {
         >
           <div
             className={`absolute inset-0 ${
-              theme === "dark"
+              resolvedTheme === "dark"
                 ? "animate-pulse bg-gradient-to-tr from-amber-300 to-yellow-500 rounded-full"
                 : "bg-slate-100"
             }`}
           />
-          {theme === "light" && <MoonSpots />}
-          {theme === "dark" && <SunCenter />}
+          {resolvedTheme === "light" && <MoonSpots />}
+          {resolvedTheme === "dark" && <SunCenter />}
         </motion.div>
 
-        {theme === "light" && <Stars />}
-        {theme === "dark" && <Clouds />}
+        {resolvedTheme === "light" && <Stars />}
+        {resolvedTheme === "dark" && <Clouds />}
       </button>
     </div>
   );

@@ -3,9 +3,20 @@
 import { useTheme } from "next-themes";
 import { motion } from "motion/react";
 import { BsFillCloudyFill, BsStarFill } from "react-icons/bs";
+import { useEffect, useState } from "react";
 
 const DarkModeToggle = () => {
   const { theme, setTheme } = useTheme();
+
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <div

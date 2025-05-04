@@ -21,34 +21,29 @@ const DarkModeToggle = () => {
             : "justify-end from-blue-500 to-sky-300"
         }`}
       >
-        <Thumb theme={theme} />
+        <motion.div
+          layout
+          transition={{
+            duration: 0.75,
+            type: "spring",
+          }}
+          className="h-6 w-6 rounded-full overflow-hidden shadow-sm relative"
+        >
+          <div
+            className={`absolute inset-0 ${
+              theme === "dark"
+                ? "animate-pulse bg-gradient-to-tr from-amber-300 to-yellow-500 rounded-full"
+                : "bg-slate-100"
+            }`}
+          />
+          {theme === "light" && <MoonSpots />}
+          {theme === "dark" && <SunCenter />}
+        </motion.div>
+
         {theme === "light" && <Stars />}
         {theme === "dark" && <Clouds />}
       </button>
     </div>
-  );
-};
-
-const Thumb = ({ theme }) => {
-  return (
-    <motion.div
-      layout
-      transition={{
-        duration: 0.75,
-        type: "spring",
-      }}
-      className="h-6 w-6 rounded-full overflow-hidden shadow-sm relative"
-    >
-      <div
-        className={`absolute inset-0 ${
-          theme === "dark"
-            ? "animate-pulse bg-gradient-to-tr from-amber-300 to-yellow-500 rounded-full"
-            : "bg-slate-100"
-        }`}
-      />
-      {theme === "light" && <MoonSpots />}
-      {theme === "dark" && <SunCenter />}
-    </motion.div>
   );
 };
 

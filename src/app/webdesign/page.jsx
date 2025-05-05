@@ -115,7 +115,7 @@ const BenefitItem = ({
       }}
       className="grid aspect-video w-full shrink-0 place-content-center rounded-2xl border border-black dark:border-white p-6 bg-zinc-100/50 dark:bg-zinc-950/30"
     >
-      <div className="flex flex-col items-center justify-center text-center">
+      <div className="flex flex-col items-center justify-center text-center p-4">
         <span className="text-xl font-semibold text-[#71b468] dark:text-indigo-500 mb-2">
           {reason}
         </span>

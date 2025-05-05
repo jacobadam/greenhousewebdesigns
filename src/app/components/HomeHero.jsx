@@ -63,7 +63,7 @@ export default function HomepageHero() {
           </div>
         </div>
 
-        <div className="mt-12 lg:mt-0 lg:ml-12 flex justify-center relative z-2">
+        <div className="order-first lg:order-none mb-12 lg:mb-0 lg:ml-12 flex justify-center relative z-2">
           <img
             src="hero-image.svg"
             className="w-3/4 md:w-2/4 lg:w-full dark:hidden"

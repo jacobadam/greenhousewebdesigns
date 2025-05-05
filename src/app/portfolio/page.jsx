@@ -2,16 +2,16 @@ export default function Portfolio() {
   const portfolioData = [
     {
       imgSrc: "https://www.katieshevlin.com/hero-image.webp",
-      altText: "Content Services",
-      title: "Content Services",
+      altText: "Content Services Portfolio",
+      title: "Content Services Portfolio",
       description:
         "Developed a polished website for a freelance content creator, showcasing their skills, services, and portfolio to attract and engage potential clients.",
       url: "https://www.katieshevlin.com/",
     },
     {
       imgSrc: "https://www.neilnevitt.com/homepage-image.webp",
-      altText: "Healthcare",
-      title: "Healthcare",
+      altText: "Healthcare Business",
+      title: "Healthcare Business",
       description:
         "Designed and built a modern website for a healthcare provider, ensuring responsive design for all devices. Focused on user-friendly navigation and improving online visibility.",
       url: "https://www.neilnevitt.com/",
@@ -42,15 +42,15 @@ export default function Portfolio() {
             ({ imgSrc, altText, title, description, url }, id) => (
               <div
                 key={id}
-                className="relative md:w-[calc(50%-1rem)] lg:w-[calc(50%-2rem)] overflow-hidden transition-all duration-700 group"
+                className="relative md:w-[calc(50%-1rem)] lg:w-[calc(50%-2rem)] overflow-hidden rounded-xl group"
               >
                 <img
                   src={imgSrc}
                   alt={altText}
-                  className="h-80 w-full object-cover relative filter brightness-90 rounded-xl"
+                  className="h-80 w-full object-cover transition-all duration-700 group-hover:scale-115"
                 />
 
-                <div className="absolute bottom-0 left-0 z-10 py-7 px-6 flex justify-between flex-col transition-all duration-500 transform translate-y-full group-hover:translate-y-0 group-hover:w-full group-hover:h-full group-hover:bg-black/50 rounded-xl">
+                <div className="absolute bottom-0 left-0 z-10 py-7 px-6 flex justify-between flex-col transition-all duration-500 transform translate-y-full group-hover:translate-y-0 group-hover:w-full group-hover:h-full group-hover:bg-black/50">
                   <div className="block">
                     <h6 className="text-xl font-bold leading-8 text-white mb-5">
                       {title}

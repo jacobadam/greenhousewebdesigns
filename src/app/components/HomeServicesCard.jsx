@@ -41,14 +41,14 @@ export default function HomeServicesCard() {
         {services.map((service, index) => (
           <div
             key={index}
-            className="relative group block p-2 h-full w-full "
+            className="relative group block p-2 h-full w-full"
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
           >
             <AnimatePresence>
               {hoveredIndex === index && (
                 <motion.span
-                  className="absolute inset-0 h-full w-full bg-zinc-300 dark:bg-slate-800/[0.8] block  rounded-3xl"
+                  className="absolute inset-0 h-full w-full bg-zinc-300 dark:bg-slate-800/[0.8] block rounded-3xl"
                   layoutId="hoverBackground"
                   initial={{ opacity: 0 }}
                   animate={{
@@ -62,7 +62,7 @@ export default function HomeServicesCard() {
                 />
               )}
             </AnimatePresence>
-            <div className=" rounded-2xl h-full w-full p-2 overflow-hidden bg-gradient-to-br from-zinc-100 to-zinc-300/20 dark:from-slate-800 dark:to-slate-800/20 border border-transparent dark:group-hover:border-slate-700 relative z-50">
+            <div className="rounded-2xl h-full w-full p-2 overflow-hidden bg-gradient-to-br from-zinc-100 to-zinc-300/20 dark:from-slate-800 dark:to-slate-800/20 border border-transparent dark:group-hover:border-slate-700 relative z-50">
               <div className="relative z-50">
                 <div className="p-4">
                   <div className="inline-block rounded-lg p-2">

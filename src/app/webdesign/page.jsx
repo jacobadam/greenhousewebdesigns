@@ -36,14 +36,8 @@ export default function WebDesign() {
     <>
       <div className="relative bg-transparent">
         <div className="relative mx-auto grid h-full w-full max-w-7xl grid-cols-1 gap-12 lg:gap-32 px-4 md:grid-cols-2 md:mb-8">
-          <div
-            className="flex h-fit w-full flex-col justify-center py-12 md:sticky md:top-0 md:h-screen"
-            style={{
-              paddingTop: "clamp(10rem, 10vw, 8rem)",
-              minHeight: "calc(100vh - clamp(4rem, 10vw, 8rem))",
-            }}
-          >
-            <h1 className="mb-4 xl:mt-8 text-4xl font-medium leading-tight text-black dark:text-white">
+          <div className="flex h-fit w-full flex-col justify-center py-12 md:sticky md:top-0 md:h-screen text-center md:text-left">
+            <h1 className="mb-4 mt-20 text-2xl lg:text-3xl font-semibold leading-tight text-black dark:text-white">
               What Is Web Design And What Are The Benefits?
             </h1>
             <p className="text-lg text-gray-800 dark:text-zinc-100">
@@ -75,7 +69,7 @@ const BenefitsCarousel = ({ benefits }) => {
     <div className="relative w-full z-5">
       <div className="sticky top-0 z-2 hidden h-36 w-full bg-transparent md:block" />
 
-      <div ref={ref} className="relative z-0 flex flex-col gap-6 md:gap-12">
+      <div ref={ref} className="relative z-0 flex flex-col gap-6">
         {benefits.map((benefit, index) => (
           <BenefitItem
             key={index}

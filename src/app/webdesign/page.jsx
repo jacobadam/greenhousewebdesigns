@@ -37,7 +37,7 @@ export default function WebDesign() {
       <div className="relative bg-transparent">
         <div className="relative mx-auto grid h-full w-full max-w-7xl grid-cols-1 gap-12 lg:gap-32 px-4 md:grid-cols-2 md:mb-8">
           <div className="flex h-fit w-full flex-col justify-center py-12 md:sticky md:top-0 md:h-screen text-center md:text-left">
-            <h1 className="mb-4 mt-20 text-2xl lg:text-3xl font-semibold leading-tight text-black dark:text-white">
+            <h1 className="mb-4 text-2xl lg:text-3xl font-semibold leading-tight text-black dark:text-white">
               What Is Web Design And What Are The Benefits?
             </h1>
             <p className="text-lg text-gray-800 dark:text-zinc-100">

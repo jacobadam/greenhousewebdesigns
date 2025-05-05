@@ -36,7 +36,13 @@ export default function WebDesign() {
     <>
       <div className="relative bg-transparent">
         <div className="relative mx-auto grid h-full w-full max-w-7xl grid-cols-1 gap-12 lg:gap-32 px-4 md:grid-cols-2 md:mb-8">
-          <div className="flex h-fit w-full flex-col justify-center py-12 md:sticky md:top-0 md:h-screen text-center md:text-left">
+          <div
+            className="flex h-fit w-full flex-col justify-center py-12 md:sticky md:top-0 md:h-screen text-center md:text-left"
+            style={{
+              paddingTop: "clamp(8rem, 10vw, 8rem)",
+              minHeight: "calc(100vh - clamp(4rem, 10vw, 8rem))",
+            }}
+          >
             <h1 className="mb-4 text-2xl lg:text-3xl font-semibold leading-tight text-black dark:text-white">
               What Is Web Design And What Are The Benefits?
             </h1>
@@ -67,7 +73,7 @@ const BenefitsCarousel = ({ benefits }) => {
 
   return (
     <div className="relative w-full z-5">
-      <div className="sticky top-0 z-2 hidden h-36 w-full bg-transparent md:block" />
+      <div className="sticky top-0 z-2 hidden h-36 w-full bg-transparent lg:block" />
 
       <div ref={ref} className="relative z-0 flex flex-col gap-6">
         {benefits.map((benefit, index) => (
@@ -109,7 +115,7 @@ const BenefitItem = ({
       }}
       className="grid aspect-video w-full shrink-0 place-content-center rounded-2xl border border-black dark:border-white p-6 bg-zinc-100/50 dark:bg-zinc-950/30"
     >
-      <div className="flex flex-col items-center justify-center text-center p-4">
+      <div className="flex flex-col items-center justify-center text-center">
         <span className="text-xl font-semibold text-[#71b468] dark:text-indigo-500 mb-2">
           {reason}
         </span>

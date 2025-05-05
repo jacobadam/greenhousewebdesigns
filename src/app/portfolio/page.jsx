@@ -42,15 +42,16 @@ export default function Portfolio() {
             ({ imgSrc, altText, title, description, url }, id) => (
               <div
                 key={id}
-                className="relative md:w-[calc(50%-1rem)] lg:w-[calc(50%-2rem)] overflow-hidden rounded-xl group"
+                className="relative md:w-[calc(50%-1rem)] lg:w-[calc(50%-2rem)] overflow-hidden rounded-xl group focus-within:ring"
+                tabIndex={0}
               >
                 <img
                   src={imgSrc}
                   alt={altText}
-                  className="h-80 w-full object-cover transition-all duration-700 group-hover:scale-115"
+                  className="h-80 w-full object-cover transition-all duration-700 group-hover:scale-110 group-focus-within:scale-110 group-active:scale-110"
                 />
 
-                <div className="absolute bottom-0 left-0 z-10 py-7 px-6 flex justify-between flex-col transition-all duration-500 transform translate-y-full group-hover:translate-y-0 group-hover:w-full group-hover:h-full group-hover:bg-black/50">
+                <div className="absolute bottom-0 left-0 z-10 py-7 px-6 flex justify-between flex-col transition-all duration-500 transform translate-y-full group-hover:translate-y-0 group-focus-within:translate-y-0 group-active:translate-y-0 group-hover:w-full group-hover:h-full group-hover:bg-black/50 group-focus-within:w-full group-focus-within:h-full group-focus-within:bg-black/50 group-active:w-full group-active:h-full group-active:bg-black/50 rounded-xl pointer-events-none group-focus-within:pointer-events-auto group-active:pointer-events-auto">
                   <div className="block">
                     <h6 className="text-xl font-bold leading-8 text-white mb-5">
                       {title}
@@ -63,11 +64,11 @@ export default function Portfolio() {
                     href={url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="cursor-pointer group flex items-center gap-2 text-base font-semibold text-white transition-all duration-500"
+                    className="cursor-pointer group flex items-center gap-2 text-base font-semibold text-white transition-all duration-500 pointer-events-auto"
                   >
                     View Portfolio
                     <svg
-                      className="transition-all duration-500 group-hover:translate-x-1"
+                      className="transition-all duration-500 group-hover:translate-x-1 group-focus-within:translate-x-1 group-active:translate-x-1"
                       width="18"
                       height="18"
                       viewBox="0 0 18 18"

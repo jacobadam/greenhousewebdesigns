@@ -113,10 +113,10 @@ const BenefitItem = ({
         opacity,
         scale,
       }}
-      className="grid py-20 px-4 w-full shrink-0 rounded-2xl border border-black dark:border-white bg-zinc-100/50 dark:bg-zinc-950/30"
+      className="grid py-16 md:py-20 px-4 w-full shrink-0 rounded-2xl border border-black dark:border-white bg-zinc-100/50 dark:bg-zinc-950/30"
     >
       <div className="flex flex-col items-center justify-center text-center">
-        <span className="text-xl font-semibold text-[#71b468] dark:text-indigo-500 mb-2">
+        <span className="text-xl font-semibold text-[#71b468] dark:text-indigo-500 mb-6">
           {reason}
         </span>
         <p className="text-lg text-zinc-800 dark:text-neutral-400">

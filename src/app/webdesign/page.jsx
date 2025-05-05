@@ -35,46 +35,34 @@ export default function WebDesign() {
   return (
     <>
       <div className="relative bg-transparent">
-        <Features benefits={benefitsOfWebDesign} />
+        <div className="relative mx-auto grid h-full w-full max-w-7xl grid-cols-1 gap-12 lg:gap-32 px-4 md:grid-cols-2 md:mb-8">
+          <div
+            className="flex h-fit w-full flex-col justify-center py-12 md:sticky md:top-0 md:h-screen"
+            style={{
+              paddingTop: "clamp(10rem, 10vw, 8rem)",
+              minHeight: "calc(100vh - clamp(4rem, 10vw, 8rem))",
+            }}
+          >
+            <h1 className="mb-4 xl:mt-8 text-4xl font-medium leading-tight text-black dark:text-white">
+              What Is Web Design And What Are The Benefits?
+            </h1>
+            <p className="text-lg text-gray-800 dark:text-zinc-100">
+              More than just making websites look good, web design is about
+              strategically planning and building online experiences that are
+              user-friendly, engaging, and achieve specific goals.
+            </p>
+            <img
+              src="/webdesign.webp"
+              alt="web design"
+              className="rounded-2xl mt-8"
+            ></img>
+          </div>
+          <BenefitsCarousel benefits={benefitsOfWebDesign} />
+        </div>
       </div>
     </>
   );
 }
-
-const Features = ({ benefits }) => {
-  return (
-    <div className="relative mx-auto grid h-full w-full max-w-7xl grid-cols-1 gap-12 lg:gap-32 px-4 md:grid-cols-2 md:mb-8">
-      <Heading />
-      <BenefitsCarousel benefits={benefits} />
-    </div>
-  );
-};
-
-const Heading = () => {
-  return (
-    <div
-      className="flex h-fit w-full flex-col justify-center py-12 md:sticky md:top-0 md:h-screen"
-      style={{
-        paddingTop: "clamp(10rem, 10vw, 8rem)",
-        minHeight: "calc(100vh - clamp(4rem, 10vw, 8rem))",
-      }}
-    >
-      <h1 className="mb-4 xl:mt-8 text-4xl font-medium leading-tight text-black dark:text-white">
-        What Is Web Design And What Are The Benefits?
-      </h1>
-      <p className="text-lg text-gray-800 dark:text-zinc-100">
-        More than just making websites look good, web design is about
-        strategically planning and building online experiences that are
-        user-friendly, engaging, and achieve specific goals.
-      </p>
-      <img
-        src="/webdesign.webp"
-        alt="web design"
-        className="rounded-2xl mt-8"
-      ></img>
-    </div>
-  );
-};
 
 const BenefitsCarousel = ({ benefits }) => {
   const ref = useRef(null);
@@ -85,7 +73,7 @@ const BenefitsCarousel = ({ benefits }) => {
 
   return (
     <div className="relative w-full z-5">
-      <Gradient />
+      <div className="sticky top-0 z-2 hidden h-36 w-full bg-transparent md:block" />
 
       <div ref={ref} className="relative z-0 flex flex-col gap-6 md:gap-12">
         {benefits.map((benefit, index) => (
@@ -100,7 +88,7 @@ const BenefitsCarousel = ({ benefits }) => {
         ))}
       </div>
 
-      <Buffer />
+      <div className="h-4 w-full md:h-48" />
     </div>
   );
 };
@@ -138,9 +126,3 @@ const BenefitItem = ({
     </motion.div>
   );
 };
-
-const Gradient = () => (
-  <div className="sticky top-0 z-2 hidden h-36 w-full bg-transparent md:block" />
-);
-
-const Buffer = () => <div className="h-4 w-full md:h-48" />;

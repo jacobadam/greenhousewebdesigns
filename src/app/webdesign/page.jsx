@@ -73,7 +73,7 @@ const BenefitsCarousel = ({ benefits }) => {
 
   return (
     <div className="relative w-full z-5">
-      <div className="sticky top-0 z-2 hidden h-36 w-full bg-transparent lg:block" />
+      <div className="sticky top-0 z-2 hidden h-36 w-full bg-transparent md:block" />
 
       <div ref={ref} className="relative z-0 flex flex-col gap-6">
         {benefits.map((benefit, index) => (
@@ -113,7 +113,7 @@ const BenefitItem = ({
         opacity,
         scale,
       }}
-      className="grid aspect-video w-full shrink-0 place-content-center rounded-2xl border border-black dark:border-white p-6 bg-zinc-100/50 dark:bg-zinc-950/30"
+      className="grid py-20 px-4 w-full shrink-0 rounded-2xl border border-black dark:border-white bg-zinc-100/50 dark:bg-zinc-950/30"
     >
       <div className="flex flex-col items-center justify-center text-center">
         <span className="text-xl font-semibold text-[#71b468] dark:text-indigo-500 mb-2">

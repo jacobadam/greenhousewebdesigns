@@ -17,6 +17,9 @@ const DarkModeToggle = () => {
         onClick={() => {
           setTheme(resolvedTheme === "dark" ? "light" : "dark");
         }}
+        aria-label={`Activate ${
+          resolvedTheme === "dark" ? "light" : "dark"
+        } mode`}
         className={`p-1 w-16 rounded-full flex shadow-md relative bg-gradient-to-b ${
           resolvedTheme === "light"
             ? " justify-start from-indigo-600 to-indigo-400"

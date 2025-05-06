@@ -31,7 +31,10 @@ export default function HomePortfolio() {
                   Content Design, Marketing
                 </h3>
               </div>
-              <button className="border border-[#6fa96f] dark:border-indigo-500 py-2 px-4 rounded-full transition-all duration-300 group-hover:bg-[#6fa96f] dark:group-hover:bg-indigo-500">
+              <button
+                aria-label="Visit Content Services Portfolio site"
+                className="border border-[#6fa96f] dark:border-indigo-500 py-2 px-4 rounded-full transition-all duration-300 group-hover:bg-[#6fa96f] dark:group-hover:bg-indigo-500"
+              >
                 <svg
                   className="stroke-[#6fa96f] dark:stroke-indigo-500 transition-all duration-300 group-hover:stroke-white"
                   xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +76,10 @@ export default function HomePortfolio() {
                   Healthcare
                 </h3>
               </div>
-              <button className="border border-[#6fa96f] dark:border-indigo-500 py-2 px-4 rounded-full transition-all duration-300 group-hover:bg-[#6fa96f] dark:group-hover:bg-indigo-500">
+              <button
+                aria-label="Visit Podiatry Business site"
+                className="border border-[#6fa96f] dark:border-indigo-500 py-2 px-4 rounded-full transition-all duration-300 group-hover:bg-[#6fa96f] dark:group-hover:bg-indigo-500"
+              >
                 <svg
                   className="stroke-[#6fa96f] dark:stroke-indigo-500 transition-all duration-300 group-hover:stroke-white"
                   xmlns="http://www.w3.org/2000/svg"

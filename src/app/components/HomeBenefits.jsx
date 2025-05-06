@@ -29,9 +29,9 @@ export default function HomeBenefits() {
                 />
               </svg>
             </div>
-            <h4 className="text-lg font-medium text-zinc-900 dark:text-white leading-7 mb-3 capitalize transition-all duration-500 ">
+            <h2 className="text-lg font-medium text-zinc-900 dark:text-white leading-7 mb-3 capitalize transition-all duration-500 ">
               100% Secure
-            </h4>
+            </h2>
             <p className="text-sm font-normal text-zinc-600 dark:text-slate-400 transition-all duration-500 leading-[1.4rem] ">
               Accurate results are our top priority, ensuring you always have
               reliable information at your fingertips.
@@ -53,9 +53,9 @@ export default function HomeBenefits() {
                 />
               </svg>
             </div>
-            <h4 className="text-lg font-medium text-gray-900 dark:text-white leading-7 mb-3 capitalize transition-all duration-500 ">
+            <h2 className="text-lg font-medium text-gray-900 dark:text-white leading-7 mb-3 capitalize transition-all duration-500 ">
               Custom Designed
-            </h4>
+            </h2>
             <p className="text-sm font-normal text-zinc-600 dark:text-slate-400 transition-all duration-500 leading-[1.4rem] ">
               Our designs are made by an in-house design team, which allows us
               to make anything we want.
@@ -78,9 +78,9 @@ export default function HomeBenefits() {
                 />
               </svg>
             </div>
-            <h4 className="text-lg font-medium text-gray-900 dark:text-white leading-7 mb-3 capitalize transition-all duration-500 ">
+            <h2 className="text-lg font-medium text-gray-900 dark:text-white leading-7 mb-3 capitalize transition-all duration-500 ">
               Top Tier Pagespeed Scores
-            </h4>
+            </h2>
             <p className="text-sm font-normal text-zinc-600 dark:text-slate-400 transition-all duration-500 leading-[1.4rem] ">
               Our sites have zero bloat, zero waste, and built with purpose so
               we get perfect 90-100/100 speed scores with Google.
@@ -103,9 +103,9 @@ export default function HomeBenefits() {
                 />
               </svg>
             </div>
-            <h4 className="text-lg font-medium text-gray-900 dark:text-white leading-7 mb-3 capitalize transition-all duration-500 ">
+            <h2 className="text-lg font-medium text-gray-900 dark:text-white leading-7 mb-3 capitalize transition-all duration-500 ">
               Money Back Guarantee
-            </h4>
+            </h2>
             <p className="text-sm font-normal text-zinc-600 dark:text-slate-400 transition-all duration-500 leading-[1.4rem] ">
               If we can’t design something you like, you get your money back and
               the contract is cancelled. We stand by our work.
@@ -128,9 +128,9 @@ export default function HomeBenefits() {
                 />
               </svg>
             </div>
-            <h4 className="text-lg font-medium text-gray-900 dark:text-white leading-7 mb-3 capitalize transition-all duration-500 ">
+            <h2 className="text-lg font-medium text-gray-900 dark:text-white leading-7 mb-3 capitalize transition-all duration-500 ">
               Unmatched Support
-            </h4>
+            </h2>
             <p className="text-sm font-normal text-zinc-600 dark:text-slate-400 transition-all duration-500 leading-[1.4rem] ">
               Call or text us anytime, no phone trees or robots. When you call
               us you get me - the owner and developer.
@@ -151,9 +151,9 @@ export default function HomeBenefits() {
                 />
               </svg>
             </div>
-            <h4 className="text-lg font-medium text-gray-900 dark:text-white leading-7 mb-3 capitalize transition-all duration-500 ">
+            <h2 className="text-lg font-medium text-gray-900 dark:text-white leading-7 mb-3 capitalize transition-all duration-500 ">
               Support
-            </h4>
+            </h2>
             <p className="text-sm font-normal text-zinc-600 dark:text-slate-400 transition-all duration-500 leading-[1.4rem] ">
               Our commitment to exceptional support ensures that you receive the
               assistance you need, whenever you need it

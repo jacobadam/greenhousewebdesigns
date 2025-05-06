@@ -24,12 +24,12 @@ export default function HomePortfolio() {
             </div>
             <div className="flex items-center justify-between max-w-[406px] md:max-w-full w-full lg:px-0">
               <div className="block">
-                <h4 className="text-2xl font-semibold text-black dark:text-gray-50 mb-1">
+                <h2 className="text-2xl font-semibold text-black dark:text-gray-50 mb-1">
                   Content Services Portfolio
-                </h4>
-                <p className="font-medium text-lg text-gray-600">
+                </h2>
+                <h3 className="font-medium text-lg text-gray-600">
                   Content Design, Marketing
-                </p>
+                </h3>
               </div>
               <button className="border border-[#6fa96f] dark:border-indigo-500 py-2 px-4 rounded-full transition-all duration-300 group-hover:bg-[#6fa96f] dark:group-hover:bg-indigo-500">
                 <svg
@@ -66,10 +66,12 @@ export default function HomePortfolio() {
             </div>
             <div className="flex items-center justify-between max-w-[406px] md:max-w-full w-full lg:px-0">
               <div className="block">
-                <h4 className="text-2xl font-semibold text-black dark:text-gray-50 mb-1">
+                <h2 className="text-2xl font-semibold text-black dark:text-gray-50 mb-1">
                   Podiatry Business
-                </h4>
-                <p className="font-medium text-lg text-gray-600">Healthcare</p>
+                </h2>
+                <h3 className="font-medium text-lg text-gray-600">
+                  Healthcare
+                </h3>
               </div>
               <button className="border border-[#6fa96f] dark:border-indigo-500 py-2 px-4 rounded-full transition-all duration-300 group-hover:bg-[#6fa96f] dark:group-hover:bg-indigo-500">
                 <svg

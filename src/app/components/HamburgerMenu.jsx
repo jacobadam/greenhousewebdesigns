@@ -12,6 +12,9 @@ const HamburgerMenu = ({ isMenuOpen, onToggle }) => {
         initial={false}
         animate={isMenuOpen ? "open" : "closed"}
         onClick={onToggle}
+        role="button"
+        aria-expanded={isMenuOpen}
+        aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         className="relative w-8 h-8 p-1 justify-center rounded-full bg-white/0 transition-colors hover:bg-red/50 lg:hidden"
       >
         <motion.span

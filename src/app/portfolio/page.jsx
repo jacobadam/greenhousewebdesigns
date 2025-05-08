@@ -28,10 +28,10 @@ export default function Portfolio() {
       <div className="w-full max-w-7xl px-6 lg:px-8 mx-auto">
         <div className="mb-8 text-center">
           <div className="flex items-center justify-between gap-5 flex-col mb-14">
-            <h2 className="text-gray-900 dark:text-white text-2xl lg:text-3xl font-semibold leading-snug">
+            <h2 className="text-black dark:text-white text-2xl lg:text-3xl font-semibold leading-snug">
               Portfolio
             </h2>
-            <p className="font-normal text-base text-gray-600 dark:text-white max-w-3xl text-center">
+            <p className="font-normal text-base text-zinc-900 dark:text-zinc-100 max-w-3xl text-center">
               Whatever your end goal, make it happen with a modern, professional
               website. Here’s some examples of my recent work:
             </p>

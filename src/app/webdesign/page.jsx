@@ -46,7 +46,7 @@ export default function WebDesign() {
             <h1 className="mb-4 text-2xl lg:text-3xl font-semibold leading-tight text-black dark:text-white">
               What Is Web Design And What Are The Benefits?
             </h1>
-            <p className="text-lg text-gray-800 dark:text-zinc-100">
+            <p className="text-lg text-zinc-900 dark:text-zinc-100">
               More than just making websites look good, web design is about
               strategically planning and building online experiences that are
               user-friendly, engaging, and achieve specific goals.
@@ -119,7 +119,7 @@ const BenefitItem = ({
         <span className="text-xl font-semibold text-[#71b468] dark:text-indigo-500 mb-6">
           {reason}
         </span>
-        <p className="text-lg text-zinc-800 dark:text-neutral-400">
+        <p className="text-lg text-zinc-800 dark:text-zinc-200">
           {benefitText}
         </p>
       </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -21,10 +22,13 @@ export default function About() {
             </p>
           </div>
           <div className="justify-start items-center lg:gap-12 gap-10 grid lg:grid-cols-2 grid-cols-1">
-            <img
+            <Image
               className="mx-auto w-72 h-72 sm:w-72 sm:h-72 md:w-96 md:h-96 rounded-full object-cover aspect-square"
               src="/jacobadam.webp"
               alt="Jacob Adam"
+              width={1920}
+              height={1279}
+              priority
             />
             <div className="flex-col justify-center lg:items-start items-center gap-10 lg:gap-0 inline-flex">
               <div className="flex-col justify-center items-start gap-3 flex">

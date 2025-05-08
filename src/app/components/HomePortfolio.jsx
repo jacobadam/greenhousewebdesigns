@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function HomePortfolio() {
   return (
-    <section className="w-full h-full py-40 md:py-60 relative bg-zinc-200 dark:bg-zinc-950">
+    <section className="w-full h-full py-40 relative bg-zinc-200 dark:bg-zinc-950">
       <div className="w-full max-w-2xl md:max-w-7xl px-6 lg:px-8 mx-auto">
         <h1 className="text-2xl xl:text-3xl font-bold text-black dark:text-white mb-16 text-center lg:text-left">
           Professional Project Achievements
@@ -35,7 +35,7 @@ export default function HomePortfolio() {
               </div>
               <button
                 aria-label="Visit Content Services Portfolio site"
-                className="border border-[#6fa96f] dark:border-indigo-500 py-2 px-4 rounded-full transition-all duration-300 group-hover:bg-[#6fa96f] dark:group-hover:bg-indigo-500"
+                className="border border-[#6fa96f] dark:border-indigo-500 py-2 px-4 rounded-full transition-all duration-300 group-hover:bg-[#6fa96f] dark:group-hover:bg-indigo-500 cursor-pointer"
               >
                 <svg
                   className="stroke-[#6fa96f] dark:stroke-indigo-500 transition-all duration-300 group-hover:stroke-white"
@@ -82,7 +82,7 @@ export default function HomePortfolio() {
               </div>
               <button
                 aria-label="Visit Podiatry Business site"
-                className="border border-[#6fa96f] dark:border-indigo-500 py-2 px-4 rounded-full transition-all duration-300 group-hover:bg-[#6fa96f] dark:group-hover:bg-indigo-500"
+                className="border border-[#6fa96f] dark:border-indigo-500 py-2 px-4 rounded-full transition-all duration-300 group-hover:bg-[#6fa96f] dark:group-hover:bg-indigo-500 cursor-pointer"
               >
                 <svg
                   className="stroke-[#6fa96f] dark:stroke-indigo-500 transition-all duration-300 group-hover:stroke-white"

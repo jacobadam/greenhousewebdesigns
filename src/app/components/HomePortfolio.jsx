@@ -1,4 +1,4 @@
-import React from "react";
+import Image from "next/image";
 
 export default function HomePortfolio() {
   return (
@@ -16,10 +16,12 @@ export default function HomePortfolio() {
             className="group flex items-center flex-col gap-8 w-full cursor-pointer"
           >
             <div className="w-full h-full">
-              <img
+              <Image
                 className="w-full h-full rounded object-contain transform transition-transform duration-300 group-hover:scale-105"
                 src="/katieshevlin-homepage.webp"
                 alt="Content services website"
+                width={2834}
+                height={1348}
               />
             </div>
             <div className="flex items-center justify-between max-w-[406px] md:max-w-full w-full lg:px-0">
@@ -61,10 +63,12 @@ export default function HomePortfolio() {
             className="group flex items-center flex-col gap-8 w-full cursor-pointer"
           >
             <div className="w-full h-full">
-              <img
+              <Image
                 className="w-full h-full rounded object-contain transform transition-transform duration-300 group-hover:scale-105"
                 src="/neilnevitt-homepage.webp"
                 alt="Healthcare Website"
+                width={2830}
+                height={1346}
               />
             </div>
             <div className="flex items-center justify-between max-w-[406px] md:max-w-full w-full lg:px-0">

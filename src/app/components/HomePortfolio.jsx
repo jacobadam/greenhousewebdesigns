@@ -4,7 +4,7 @@ export default function HomePortfolio() {
   return (
     <section className="w-full h-full py-40 md:py-60 relative bg-zinc-200 dark:bg-zinc-950">
       <div className="w-full max-w-2xl md:max-w-7xl px-6 lg:px-8 mx-auto">
-        <h1 className="text-2xl xl:text-3xl font-bold text-black dark:text-gray-50 mb-16 max-md:text-center">
+        <h1 className="text-2xl xl:text-3xl font-bold text-black dark:text-white mb-16 text-center lg:text-left">
           Professional Project Achievements
         </h1>
 
@@ -26,10 +26,10 @@ export default function HomePortfolio() {
             </div>
             <div className="flex items-center justify-between max-w-[406px] md:max-w-full w-full lg:px-0">
               <div className="block">
-                <h2 className="text-2xl font-semibold text-black dark:text-gray-50 mb-1">
+                <h2 className="text-2xl font-semibold text-black dark:text-white mb-1">
                   Content Services Portfolio
                 </h2>
-                <h3 className="font-medium text-lg text-gray-600">
+                <h3 className="font-medium text-lg text-gray-800 dark:text-zinc-200">
                   Content Design, Marketing
                 </h3>
               </div>
@@ -73,10 +73,10 @@ export default function HomePortfolio() {
             </div>
             <div className="flex items-center justify-between max-w-[406px] md:max-w-full w-full lg:px-0">
               <div className="block">
-                <h2 className="text-2xl font-semibold text-black dark:text-gray-50 mb-1">
+                <h2 className="text-2xl font-semibold text-black dark:text-white mb-1">
                   Podiatry Business
                 </h2>
-                <h3 className="font-medium text-lg text-gray-600">
+                <h3 className="font-medium text-lg text-gray-800 dark:text-zinc-200">
                   Healthcare
                 </h3>
               </div>

@@ -32,7 +32,7 @@ export default function HomeContact() {
 
   return (
     <div className="h-full w-full flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 bg-transparent py-24 lg:py-8">
-      <h1 className="text-2xl xl:text-3xl font-bold text-center pt-8 text-black dark:text-gray-50">
+      <h1 className="text-2xl xl:text-3xl font-bold text-center pt-8 text-black dark:text-white">
         Contact
       </h1>
       {messageSent && (
@@ -62,7 +62,7 @@ export default function HomeContact() {
         <div className="relative mb-6">
           <label
             htmlFor="name"
-            className="flex items-center mb-2 text-gray-600 dark:text-gray-50 text-sm font-medium"
+            className="flex items-center mb-2 text-gray-800 dark:text-zinc-200 text-sm font-medium"
           >
             Name
             <svg
@@ -93,7 +93,7 @@ export default function HomeContact() {
         <div className="relative mb-6">
           <label
             htmlFor="email"
-            className="flex items-center mb-2 text-gray-600 dark:text-gray-50 text-sm font-medium"
+            className="flex items-center mb-2 text-gray-800 dark:text-zinc-200 text-sm font-medium"
           >
             Email
             <svg
@@ -124,7 +124,7 @@ export default function HomeContact() {
         <div className="relative mb-6">
           <label
             htmlFor="message"
-            className="flex items-center mb-2 text-gray-600 dark:text-gray-50 text-sm font-medium"
+            className="flex items-center mb-2 text-gray-800 dark:text-zinc-200 text-sm font-medium"
           >
             Message
             <svg

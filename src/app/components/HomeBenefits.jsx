@@ -1,12 +1,12 @@
 export default function HomeBenefits() {
   return (
-    <section className="w-full py-24 bg-transparent">
+    <section className="w-full py-12 bg-transparent">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-14 text-center">
-          <h1 className="text-2xl xl:text-3xl font-bold text-center text-zinc-900 dark:text-white leading-[3.25rem] mb-5 max-w-full lg:max-w-3xl lg:mx-auto">
+          <h1 className="text-2xl xl:text-3xl font-bold text-center text-black dark:text-white leading-[3.25rem] mb-5 max-w-full lg:max-w-3xl lg:mx-auto">
             Why choose us
           </h1>
-          <p className="text-zinc-600 dark:text-gray-300 lg:max-w-3xl lg:mx-auto">
+          <p className="text-gray-800 dark:text-zinc-200 lg:max-w-3xl lg:mx-auto">
             At every step of our process, we prioritize the user, ensuring that
             our products and services are designed with their needs in mind.
           </p>
@@ -29,10 +29,10 @@ export default function HomeBenefits() {
                 />
               </svg>
             </div>
-            <h2 className="text-lg font-medium text-zinc-900 dark:text-white leading-7 mb-3 capitalize transition-all duration-500 ">
+            <h2 className="text-lg font-medium text-black dark:text-white leading-7 mb-3">
               100% Secure
             </h2>
-            <p className="text-sm font-normal text-zinc-600 dark:text-slate-400 transition-all duration-500 leading-[1.4rem] ">
+            <p className="text-sm font-normal text-gray-800 dark:text-zinc-200 transition-all duration-500 leading-[1.4rem] ">
               Accurate results are our top priority, ensuring you always have
               reliable information at your fingertips.
             </p>
@@ -53,10 +53,10 @@ export default function HomeBenefits() {
                 />
               </svg>
             </div>
-            <h2 className="text-lg font-medium text-gray-900 dark:text-white leading-7 mb-3 capitalize transition-all duration-500 ">
+            <h2 className="text-lg font-medium text-gray-900 dark:text-white leading-7 mb-3">
               Custom Designed
             </h2>
-            <p className="text-sm font-normal text-zinc-600 dark:text-slate-400 transition-all duration-500 leading-[1.4rem] ">
+            <p className="text-sm font-normal text-gray-800 dark:text-zinc-200 transition-all duration-500 leading-[1.4rem] ">
               Our designs are made by an in-house design team, which allows us
               to make anything we want.
             </p>
@@ -78,10 +78,10 @@ export default function HomeBenefits() {
                 />
               </svg>
             </div>
-            <h2 className="text-lg font-medium text-gray-900 dark:text-white leading-7 mb-3 capitalize transition-all duration-500 ">
+            <h2 className="text-lg font-medium text-gray-900 dark:text-white leading-7 mb-3">
               Top Tier Pagespeed Scores
             </h2>
-            <p className="text-sm font-normal text-zinc-600 dark:text-slate-400 transition-all duration-500 leading-[1.4rem] ">
+            <p className="text-sm font-normal text-gray-800 dark:text-zinc-200 transition-all duration-500 leading-[1.4rem] ">
               Our sites have zero bloat, zero waste, and built with purpose so
               we get perfect 90-100/100 speed scores with Google.
             </p>
@@ -103,10 +103,10 @@ export default function HomeBenefits() {
                 />
               </svg>
             </div>
-            <h2 className="text-lg font-medium text-gray-900 dark:text-white leading-7 mb-3 capitalize transition-all duration-500 ">
+            <h2 className="text-lg font-medium text-gray-900 dark:text-white leading-7 mb-3">
               Money Back Guarantee
             </h2>
-            <p className="text-sm font-normal text-zinc-600 dark:text-slate-400 transition-all duration-500 leading-[1.4rem] ">
+            <p className="text-sm font-normal text-gray-800 dark:text-zinc-200 transition-all duration-500 leading-[1.4rem] ">
               If we can’t design something you like, you get your money back and
               the contract is cancelled. We stand by our work.
             </p>
@@ -128,10 +128,10 @@ export default function HomeBenefits() {
                 />
               </svg>
             </div>
-            <h2 className="text-lg font-medium text-gray-900 dark:text-white leading-7 mb-3 capitalize transition-all duration-500 ">
+            <h2 className="text-lg font-medium text-gray-900 dark:text-white leading-7 mb-3">
               Unmatched Support
             </h2>
-            <p className="text-sm font-normal text-zinc-600 dark:text-slate-400 transition-all duration-500 leading-[1.4rem] ">
+            <p className="text-sm font-normal text-gray-800 dark:text-zinc-200 transition-all duration-500 leading-[1.4rem] ">
               Call or text us anytime, no phone trees or robots. When you call
               us you get me - the owner and developer.
             </p>
@@ -151,10 +151,10 @@ export default function HomeBenefits() {
                 />
               </svg>
             </div>
-            <h2 className="text-lg font-medium text-gray-900 dark:text-white leading-7 mb-3 capitalize transition-all duration-500 ">
+            <h2 className="text-lg font-medium text-gray-900 dark:text-white leading-7 mb-3">
               Support
             </h2>
-            <p className="text-sm font-normal text-zinc-600 dark:text-slate-400 transition-all duration-500 leading-[1.4rem] ">
+            <p className="text-sm font-normal text-gray-800 dark:text-zinc-200 transition-all duration-500 leading-[1.4rem] ">
               Our commitment to exceptional support ensures that you receive the
               assistance you need, whenever you need it
             </p>

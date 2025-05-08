@@ -42,7 +42,7 @@ export default function HomepageHero() {
               </span>
             ))}
           </motion.h1>
-          <p className="mt-4 text-gray-800 dark:text-zinc-100 font-medium">
+          <p className="mt-4 text-gray-800 dark:text-zinc-200 font-medium">
             With a focus on clean, responsive design and search engine
             optimization, I build sites that help your business thrive.
           </p>

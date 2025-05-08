@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import Image from "next/image";
 
 export default function HomepageHero() {
   const text = "Web Designs That Grow With Your Business";
@@ -64,14 +65,14 @@ export default function HomepageHero() {
         </div>
 
         <div className="order-first lg:order-none mb-12 lg:mb-0 lg:ml-12 flex justify-center relative z-2">
-          <img
+          <Image
             src="hero-image.svg"
             className="w-3/4 md:w-2/4 lg:w-full dark:hidden"
             alt="A graphic of a laptop and a mobile device"
             width="500"
             height="287"
           />
-          <img
+          <Image
             src="hero-image-dark.svg"
             className="w-3/4 md:w-2/4 lg:w-full hidden dark:block"
             alt="A graphic of a laptop and a mobile device"

@@ -62,7 +62,7 @@ export default function HomeContact() {
         <div className="relative mb-6">
           <label
             htmlFor="name"
-            className="flex items-center mb-2 text-gray-800 dark:text-zinc-200 text-sm font-medium"
+            className="flex items-center mb-2 text-zinc-900 dark:text-zinc-200 text-sm font-medium"
           >
             Name
             <svg
@@ -86,14 +86,14 @@ export default function HomeContact() {
             name="name"
             required
             aria-required="true"
-            className="block w-full h-11 px-5 py-2.5 leading-7 text-base font-normal shadow-xs text-gray-900 border border-gray-300 bg-white dark:bg-gray-00 rounded-full placeholder-gray-400 focus:outline-none"
+            className="block w-full h-11 px-5 py-2.5 leading-7 text-base font-normal shadow-xs text-zinc-900 border border-gray-300 bg-white dark:bg-zinc-100 rounded-full placeholder-gray-400 focus:outline-none"
           />
         </div>
 
         <div className="relative mb-6">
           <label
             htmlFor="email"
-            className="flex items-center mb-2 text-gray-800 dark:text-zinc-200 text-sm font-medium"
+            className="flex items-center mb-2 text-zinc-900 dark:text-zinc-200 text-sm font-medium"
           >
             Email
             <svg
@@ -117,14 +117,14 @@ export default function HomeContact() {
             name="email"
             required
             aria-required="true"
-            className="block w-full h-11 px-5 py-2.5 leading-7 text-base font-normal shadow-xs text-gray-900 border border-gray-300 bg-white rounded-full placeholder-gray-400 focus:outline-none"
+            className="block w-full h-11 px-5 py-2.5 leading-7 text-base font-normal shadow-xs text-zinc-900 border border-gray-300 bg-white rounded-full placeholder-gray-400 focus:outline-none"
           />
         </div>
 
         <div className="relative mb-6">
           <label
             htmlFor="message"
-            className="flex items-center mb-2 text-gray-800 dark:text-zinc-200 text-sm font-medium"
+            className="flex items-center mb-2 text-zinc-900 dark:text-zinc-200 text-sm font-medium"
           >
             Message
             <svg
@@ -143,7 +143,7 @@ export default function HomeContact() {
             </svg>
           </label>
           <textarea
-            className="block w-full h-40 px-4 py-2.5 text-base leading-7 font-normal shadow-xs text-gray-900 border border-gray-300 bg-white rounded-2xl placeholder-gray-400 focus:outline-none resize-none"
+            className="block w-full h-40 px-4 py-2.5 text-base leading-7 font-normal shadow-xs text-zinc-900 border border-gray-300 bg-white rounded-2xl placeholder-gray-400 focus:outline-none resize-none"
             name="message"
             id="message"
             required

@@ -9,7 +9,7 @@ export default function HomeServices() {
             <h1 className="text-2xl xl:text-3xl font-bold mb-2 text-black dark:text-white">
               Quality Design, Real Impact
             </h1>
-            <p className="text-gray-800 dark:text-zinc-100 text-center leading-relaxed">
+            <p className="text-zinc-900 dark:text-zinc-100 text-center leading-relaxed">
               Discover a range of solutions tailored <br /> to meet your
               business needs
             </p>

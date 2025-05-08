@@ -26,10 +26,10 @@ export default function HomePortfolio() {
             </div>
             <div className="flex items-center justify-between max-w-[406px] md:max-w-full w-full lg:px-0">
               <div className="block">
-                <h2 className="text-2xl font-semibold text-black dark:text-white mb-1">
+                <h2 className="text-2xl font-semibold text-zinc-900 dark:text-white mb-1">
                   Content Services Portfolio
                 </h2>
-                <h3 className="font-medium text-lg text-gray-800 dark:text-zinc-200">
+                <h3 className="font-medium text-lg text-zinc-800 dark:text-zinc-200">
                   Content Design, Marketing
                 </h3>
               </div>
@@ -73,10 +73,10 @@ export default function HomePortfolio() {
             </div>
             <div className="flex items-center justify-between max-w-[406px] md:max-w-full w-full lg:px-0">
               <div className="block">
-                <h2 className="text-2xl font-semibold text-black dark:text-white mb-1">
+                <h2 className="text-2xl font-semibold text-zinc-900 dark:text-white mb-1">
                   Podiatry Business
                 </h2>
-                <h3 className="font-medium text-lg text-gray-800 dark:text-zinc-200">
+                <h3 className="font-medium text-lg text-zinc-800 dark:text-zinc-200">
                   Healthcare
                 </h3>
               </div>

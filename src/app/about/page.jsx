@@ -16,7 +16,7 @@ export default function About() {
             <h2 className="text-center text-black dark:text-white text-2xl lg:text-3xl font-bold font-manrope leading-normal">
               About Us
             </h2>
-            <p className="max-w-xl text-center text-zinc-800 dark:text-zinc-100 text-base font-normal leading-relaxed">
+            <p className="max-w-xl text-center text-zinc-900 dark:text-zinc-100 text-base font-normal leading-relaxed">
               At Greenhouse Web Designs, we're passionate about building custom
               websites that help small businesses thrive online.
             </p>

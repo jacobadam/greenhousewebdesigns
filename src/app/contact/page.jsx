@@ -39,13 +39,13 @@ export default function Contact() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 z-20">
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 lg:items-start items-center lg:justify-start justify-center">
           <div className="flex flex-col items-center text-center px-4 sm:px-6">
-            <h2 className="text-gray-900 dark:text-white text-2xl lg:text-3xl font-semibold leading-snug pb-5">
+            <h2 className="text-black dark:text-white text-2xl lg:text-3xl font-semibold leading-snug pb-5">
               Contact
             </h2>
-            <p className="text-gray-900 dark:text-white text-md font-normal pb-6">
+            <p className="text-zinc-900 dark:text-zinc-100 text-md font-normal pb-6">
               Get in touch and let's discuss how I can serve your business.
             </p>
-            <div className="py-6 border-t border-gray-400  dark:border-zinc-200 text-center">
+            <div className="py-6 border-t border-gray-400 dark:border-zinc-200 text-center">
               <div className="flex flex-col items-center">
                 <div className="rounded-lg p-3">
                   <img
@@ -55,7 +55,7 @@ export default function Contact() {
                   />
                 </div>
 
-                <p className="text-gray-700 dark:text-white text-xs font-normal">
+                <p className="text-zinc-800 dark:text-zinc-200 text-xs font-normal">
                   greenhousewebdesigns@gmail.com
                 </p>
               </div>
@@ -68,7 +68,7 @@ export default function Contact() {
                   />
                 </div>
 
-                <p className="text-gray-700 dark:text-white text-xs font-normal">
+                <p className="text-zinc-800 dark:text-zinc-200 text-xs font-normal">
                   (+1) 236-885-4130
                 </p>
               </div>
@@ -93,7 +93,7 @@ export default function Contact() {
               <div>
                 <label
                   htmlFor="name"
-                  className="flex items-center mb-2 text-gray-900 dark:text-white"
+                  className="flex items-center mb-2 text-zinc-900 dark:text-zinc-100"
                 >
                   Name{" "}
                   <svg
@@ -116,13 +116,13 @@ export default function Contact() {
                   name="name"
                   required
                   aria-required="true"
-                  className="w-full border rounded-md px-4 py-2 bg-white"
+                  className="w-full border rounded-md px-4 py-2 bg-white dark:bg-zinc-100 focus:ring-2 focus:ring-[#6fa96f] dark:focus:ring-indigo-500 outline-none"
                 />
               </div>
               <div>
                 <label
                   htmlFor="email"
-                  className="flex items-center mb-2 text-gray-900 dark:text-white"
+                  className="flex items-center mb-2 text-zinc-900 dark:text-zinc-100"
                 >
                   Email{" "}
                   <svg
@@ -144,13 +144,13 @@ export default function Contact() {
                   id="email"
                   name="email"
                   required
-                  className="w-full border rounded-md px-4 py-2 bg-white"
+                  className="w-full border rounded-md px-4 py-2 bg-white dark:bg-zinc-100 focus:ring-2 focus:ring-[#6fa96f] dark:focus:ring-indigo-500 outline-none"
                 />
               </div>
               <div>
                 <label
                   htmlFor="message"
-                  className="flex items-center mb-2 text-gray-900 dark:text-white"
+                  className="flex items-center mb-2 text-zinc-900 dark:text-zinc-100"
                 >
                   Message{" "}
                   <svg
@@ -173,14 +173,14 @@ export default function Contact() {
                   type="text"
                   required
                   rows="4"
-                  className="w-full border rounded-md px-4 py-2 bg-white"
+                  className="w-full border rounded-md px-4 py-2 bg-white dark:bg-zinc-100 focus:ring-2 focus:ring-[#6fa96f] dark:focus:ring-indigo-500 outline-none"
                 ></textarea>
               </div>
               <button
                 type="submit"
                 value="Send"
                 title="Submit your message"
-                className="flex justify-center items-center relative h-[50px] w-40 overflow-hidden border dark:border-indigo-500 border-[#6fa96f] dark:hover:border-indigo-500 bg-transparent px-3 dark:text-indigo-500 text-[#6fa96f] dark:hover:text-black hover:shadow-2xl before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#6fa96f] dark:before:bg-indigo-500 before:transition-all before:duration-300 hover:text-white hover:shadow-[#6fa96f] dark:hover:shadow-indigo-500 hover:before:left-0 hover:before:w-full rounded-full font-semibold mt-4"
+                className="flex justify-center items-center relative h-[50px] w-40 overflow-hidden border border-[#6fa96f] dark:border-indigo-500 bg-[#6fa96f] dark:bg-transparent px-3 text-zinc-100 dark:text-indigo-500 dark:hover:text-white hover:shadow-2xl before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#6fa96f] dark:before:bg-indigo-500 before:transition-all before:duration-500 hover:text-white hover:shadow-[#6fa96f] dark:hover:shadow-indigo-500 hover:before:left-0 hover:before:w-full rounded-full font-semibold mt-4"
               >
                 <span className="relative z-3">Submit</span>
               </button>

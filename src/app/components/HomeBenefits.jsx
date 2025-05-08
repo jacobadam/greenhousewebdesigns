@@ -6,7 +6,7 @@ export default function HomeBenefits() {
           <h1 className="text-2xl xl:text-3xl font-bold text-center text-black dark:text-white leading-[3.25rem] mb-5 max-w-full lg:max-w-3xl lg:mx-auto">
             Why choose us
           </h1>
-          <p className="text-gray-800 dark:text-zinc-200 lg:max-w-3xl lg:mx-auto">
+          <p className="text-gray-800 dark:text-zinc-100 lg:max-w-3xl lg:mx-auto">
             At every step of our process, we prioritize the user, ensuring that
             our products and services are designed with their needs in mind.
           </p>

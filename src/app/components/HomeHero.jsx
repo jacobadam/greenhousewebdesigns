@@ -42,7 +42,7 @@ export default function HomepageHero() {
               </span>
             ))}
           </motion.h1>
-          <p className="mt-4 text-gray-800 dark:text-zinc-200 font-medium">
+          <p className="mt-4 text-gray-800 dark:text-zinc-100 font-medium">
             With a focus on clean, responsive design and search engine
             optimization, I build sites that help your business thrive.
           </p>
@@ -50,14 +50,14 @@ export default function HomepageHero() {
             <a
               href="/services"
               aria-label="Go to services"
-              className="flex justify-center items-center relative h-[50px] w-40 overflow-hidden border border-[#6fa96f] dark:border-indigo-500 bg-[#6fa96f] dark:bg-indigo-500 px-3 text-zinc-100 dark:text-white dark:hover:text-black hover:shadow-2xl before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#6fa96f] dark:before:bg-indigo-500 before:transition-all before:duration-500 hover:text-white hover:shadow-[#6fa96f] dark:hover:shadow-indigo-500 hover:before:left-0 hover:before:w-full rounded-full font-semibold mt-4"
+              className="flex justify-center items-center relative h-[50px] w-40 overflow-hidden border border-[#6fa96f] dark:border-indigo-500 bg-[#6fa96f] dark:bg-indigo-500 px-3 text-zinc-100 dark:text-black dark:hover:text-white hover:shadow-2xl before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#6fa96f] dark:before:bg-indigo-500 before:transition-all before:duration-500 hover:text-white hover:shadow-[#6fa96f] dark:hover:shadow-indigo-500 hover:before:left-0 hover:before:w-full rounded-full font-semibold mt-4"
             >
               <span className="relative z-3">Services</span>
             </a>
             <a
               href="/contact"
               aria-label="Go to contact page"
-              className="flex justify-center items-center relative h-[50px] w-40 overflow-hidden border dark:border-indigo-500 border-[#6fa96f] dark:hover:border-indigo-500 bg-transparent px-3 dark:text-indigo-500 text-[#6fa96f] dark:hover:text-black hover:shadow-2xl before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#6fa96f] dark:before:bg-indigo-500 before:transition-all before:duration-300 hover:text-white hover:shadow-[#6fa96f] dark:hover:shadow-indigo-500 hover:before:left-0 hover:before:w-full rounded-full font-semibold mt-4"
+              className="flex justify-center items-center relative h-[50px] w-40 overflow-hidden border dark:border-indigo-500 border-[#6fa96f] dark:hover:border-indigo-500 bg-transparent px-3 dark:text-indigo-500 text-[#6fa96f] dark:hover:text-white hover:shadow-2xl before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#6fa96f] dark:before:bg-indigo-500 before:transition-all before:duration-300 hover:text-white hover:shadow-[#6fa96f] dark:hover:shadow-indigo-500 hover:before:left-0 hover:before:w-full rounded-full font-semibold mt-4"
             >
               <span className="relative z-3">Get in touch</span>
             </a>

@@ -2,6 +2,7 @@
 
 import React, { useRef } from "react";
 import { useScroll, useTransform, motion } from "motion/react";
+import Image from "next/image";
 
 export default function WebDesign() {
   const benefitsOfWebDesign = [
@@ -43,7 +44,7 @@ export default function WebDesign() {
               minHeight: "calc(100vh - clamp(4rem, 10vw, 8rem))",
             }}
           >
-            <h1 className="mb-4 text-2xl lg:text-3xl font-semibold leading-tight text-black dark:text-white">
+            <h1 className="mb-4 lg:mt-8 text-2xl lg:text-3xl font-semibold leading-tight text-black dark:text-white">
               What Is Web Design And What Are The Benefits?
             </h1>
             <p className="text-lg text-zinc-900 dark:text-zinc-100">
@@ -51,11 +52,14 @@ export default function WebDesign() {
               strategically planning and building online experiences that are
               user-friendly, engaging, and achieve specific goals.
             </p>
-            <img
+            <Image
               src="/webdesign.webp"
               alt="web design"
               className="rounded-2xl mt-8"
-            ></img>
+              width={768}
+              height={510}
+              priority
+            ></Image>
           </div>
           <BenefitsCarousel benefits={benefitsOfWebDesign} />
         </div>

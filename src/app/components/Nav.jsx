@@ -46,8 +46,12 @@ export default function NavBar() {
       }`}
     >
       <div className="flex items-center justify-between">
-        <Link href="/" className="w-36 p-2" onClick={scrollToTop}>
-          <img src="/greenhouse-logo.png" alt="Greenhouse Web Designs Logo" />
+        <Link href="/" className="p-2" onClick={scrollToTop}>
+          <img
+            src="/greenhouse-logo.png"
+            alt="Greenhouse Web Designs Logo"
+            className="w-32 h-12"
+          />
         </Link>
 
         <div className="hidden items-center gap-2 lg:flex opacity-100">

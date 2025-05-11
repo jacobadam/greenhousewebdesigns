@@ -30,7 +30,7 @@ export default function HomePortfolio() {
                   Content Services Portfolio
                 </h2>
                 <h3 className="font-medium text-lg text-zinc-800 dark:text-zinc-200">
-                  Content Design, Marketing
+                  Content Design
                 </h3>
               </div>
               <button

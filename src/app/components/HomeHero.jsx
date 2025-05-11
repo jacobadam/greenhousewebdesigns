@@ -43,8 +43,8 @@ export default function HomepageHero() {
             ))}
           </motion.h1>
           <p className="mt-4 text-zinc-900 dark:text-zinc-100 font-medium">
-            With a focus on clean, responsive design and search engine
-            optimization, I build sites that help your business thrive.
+            By focusing on clean, responsive design and search engine
+            optimization, I build sites that help businesses thrive.
           </p>
           <div className="flex items-center gap-x-4 mt-8 lg:mt-4">
             <a

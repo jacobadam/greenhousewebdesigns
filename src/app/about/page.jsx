@@ -34,31 +34,23 @@ export default function About() {
               <div className="flex-col justify-center items-start gap-3 flex">
                 <p className="text-zinc-800 dark:text-zinc-200 text-base font-normal leading-relaxed lg:text-start text-center">
                   I'm Jacob, founder of Greenhouse Web Designs — a small studio
-                  with a big mission: helping small businesses grow online
-                  through thoughtful, custom-built websites.
+                  with a big mission: helping businesses grow with high-quality,
+                  bespoke websites.
                 </p>
                 <p className="text-zinc-800 dark:text-zinc-200 text-base font-normal leading-relaxed lg:text-start text-center">
                   I began my career at SpareRoom, the UK’s largest property
                   rental platform, before moving to Article, one of Canada’s top
-                  eCommerce brands. Along the way, I’ve built a strong
-                  foundation in scalable, user-focused web development — and now
-                  I bring that experience directly to small business owners who
-                  want more than a cookie-cutter solution.
+                  eCommerce brands. Along the way, I’ve gained a strong
+                  foundation in scalable, user-focused web development — and I
+                  now bring that experience directly to small business owners
+                  who want more than a cookie-cutter solution.
                 </p>
                 <p className="text-zinc-800 dark:text-zinc-200 text-base font-normal leading-relaxed lg:text-start text-center">
-                  At Greenhouse, I focus on creating websites that truly reflect
-                  the personality and goals of your business. Whether you're
-                  just getting started or looking to refresh your online
-                  presence, I’ll work closely with you to build a site that
-                  feels like an extension of your brand — and helps convert
-                  visitors into loyal customers.
-                </p>
-                <p className="text-zinc-800 dark:text-zinc-200 text-base font-normal leading-relaxed lg:text-start text-center">
-                  Originally from Liverpool, I’ve lived and worked in cities
-                  around the world — London, New York, Vancouver, Sayulita — and
-                  now call Kimberley, BC home. When I’m not designing or coding,
-                  you’ll find me on a trail run, skiing local powder, deep into
-                  a 90s video game, or working through the Criterion Collection.
+                  At Greenhouse, I focus on creating websites that reflect your
+                  goals and vision. Whether you're just getting started or
+                  looking to refresh your online presence, I’ll work closely
+                  with you to develop a site that feels like an extension of
+                  your brand — and helps convert visitors into loyal customers.
                 </p>
                 <p className="text-zinc-800 dark:text-zinc-200 text-base font-normal leading-relaxed lg:text-start text-center">
                   If you’re ready to grow your digital presence with a website

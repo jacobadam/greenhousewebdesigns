@@ -44,10 +44,10 @@ export default function WebDesign() {
               minHeight: "calc(100vh - clamp(4rem, 10vw, 8rem))",
             }}
           >
-            <h1 className="mb-4 lg:mt-8 text-2xl lg:text-3xl font-semibold leading-tight text-black dark:text-white">
+            <h1 className="mb-4 lg:mt-8 text-2xl lg:text-3xl font-semibold leading-tight text-black dark:text-white text-center">
               What Is Web Design And What Are The Benefits?
             </h1>
-            <p className="text-lg text-zinc-900 dark:text-zinc-100">
+            <p className="text-lg text-zinc-900 dark:text-zinc-100 text-center">
               More than just making websites look good, web design is about
               strategically planning and building online experiences that are
               user-friendly, engaging, and achieve specific goals.

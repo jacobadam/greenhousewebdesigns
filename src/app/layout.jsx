@@ -36,6 +36,10 @@ export const metadata = {
     "Frontend Development",
     "Full Stack Development",
   ],
+  robots: "index, follow",
+  author: "Jacob Adam",
+  language: "en",
+  canonical: "https://www.greenhousewebdesigns.com/",
   openGraph: {
     title: "Greenhouse Web Designs",
     description:
@@ -61,6 +65,7 @@ export const metadata = {
       "Custom websites built for growth. Fast, modern, and responsive solutions for small businesses and individuals.",
     images: ["https://www.greenhousewebdesigns.com/webdesign.webp"],
   },
+  publishedDate: "2025-05-12",
 };
 
 export default function RootLayout({ children }) {

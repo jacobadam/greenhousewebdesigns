@@ -66,32 +66,6 @@ export const metadata = {
       "Custom websites built for growth. Fast, modern, and responsive solutions for small businesses and individuals.",
     images: ["https://www.greenhousewebdesigns.com/webdesign.webp"],
   },
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-32x32.png",
-    apple: "/apple-touch-icon.png",
-    other: [
-      {
-        rel: "icon",
-        url: "/favicon-16x16.png",
-        sizes: "16x16",
-      },
-      {
-        rel: "icon",
-        url: "/favicon-32x32.png",
-        sizes: "32x32",
-      },
-      {
-        rel: "icon",
-        url: "/favicon.svg",
-        type: "image/svg+xml",
-      },
-      {
-        rel: "manifest",
-        url: "/site.webmanifest",
-      },
-    ],
-  },
   publishedDate: "2025-05-12",
 };
 

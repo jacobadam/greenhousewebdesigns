@@ -72,6 +72,15 @@ export const metadata = {
       },
     ],
   },
+  structuredData: {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Greenhouse Web Designs",
+    url: "https://www.greenhousewebdesigns.com",
+    logo: "https://www.greenhousewebdesigns.com/favicon.ico",
+    description:
+      "Custom websites built for growth. Fast, modern, and responsive solutions for small businesses and individuals.",
+  },
   publishedDate: "2025-05-12",
 };
 

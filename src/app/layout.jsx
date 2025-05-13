@@ -42,29 +42,35 @@ export const metadata = {
   language: "en",
   canonical: "https://www.greenhousewebdesigns.com/",
   openGraph: {
+    url: "https://www.greenhousewebdesigns.com",
+    type: "website",
     title: "Greenhouse Web Designs",
     description:
       "Custom websites built for growth. Fast, modern, and responsive solutions for small businesses and individuals.",
-    url: "https://www.greenhousewebdesigns.com/",
-    siteName: "Greenhouse Web Designs",
     images: [
       {
         url: "https://www.greenhousewebdesigns.com/webdesign.webp",
         width: 1200,
         height: 630,
-        alt: "Custom website design and SEO services for growing businesses",
-        type: "image/webp",
+        alt: "Hero Image",
       },
     ],
-    locale: "en_US",
-    type: "website",
   },
   twitter: {
     card: "summary_large_image",
+    domain: "www.greenhousewebdesigns.com",
+    url: "https://www.greenhousewebdesigns.com",
     title: "Greenhouse Web Designs",
     description:
       "Custom websites built for growth. Fast, modern, and responsive solutions for small businesses and individuals.",
-    images: ["https://www.greenhousewebdesigns.com/webdesign.webp"],
+    images: [
+      {
+        url: "https://www.greenhousewebdesigns.com/webdesign.webp",
+        width: 1200,
+        height: 630,
+        alt: "Hero Image",
+      },
+    ],
   },
   publishedDate: "2025-05-12",
 };

@@ -17,62 +17,69 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Greenhouse Web Designs",
+  title: "Content Services by Katie Shevlin",
   description:
-    "Custom websites built for growth. Greenhouse Web Designs helps businesses and individuals stand out with fast, modern, and responsive web solutions.",
+    "Professional writing, editing, SEO, and strategy services to elevate your brand. Get expert support to ensure your content has impact and meets your marketing goals.",
   keywords: [
-    "Web Design",
-    "Freelance Web Developer",
-    "Custom Websites",
-    "Small Business Websites",
-    "SEO Optimization",
-    "Website Copywriting",
-    "Next.js",
-    "Responsive Design",
-    "Conversion Optimization",
-    "User Experience",
-    "UI/UX Design",
-    "Performance Optimization",
-    "Content Strategy",
-    "Frontend Development",
-    "Full Stack Development",
+    "freelance editor",
+    "freelance writer",
+    "SEO",
+    "strategy",
+    "content strategy",
+    "editor",
+    "writer",
   ],
   robots: "index, follow",
-  author: "Jacob Adam",
+  author: "Katie Shevlin",
   language: "en",
-  canonical: "https://www.greenhousewebdesigns.com/",
+  canonical: "https://www.katieshevlin.com",
   openGraph: {
-    url: "https://www.greenhousewebdesigns.com",
+    url: "https://www.katieshevlin.com",
     type: "website",
-    title: "Greenhouse Web Designs",
+    title: "Content Services by Katie Shevlin",
     description:
-      "Custom websites built for growth. Fast, modern, and responsive solutions for small businesses and individuals.",
+      "Professional writing, editing, SEO, and strategy services to elevate your brand. Get expert support to ensure your content has impact and meets your marketing goals.",
     images: [
       {
-        url: "https://www.greenhousewebdesigns.com/webdesign.webp",
-        width: 768,
-        height: 510,
-        alt: "Web Design",
+        url: "https://www.katieshevlin.com/hero-image.webp",
+        width: 1200,
+        height: 630,
+        alt: "Hero Image",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    domain: "www.greenhousewebdesigns.com",
-    url: "https://www.greenhousewebdesigns.com",
-    title: "Greenhouse Web Designs",
+    domain: "www.katieshevlin.com",
+    url: "https://www.katieshevlin.com",
+    title: "Content Services by Katie Shevlin",
     description:
-      "Custom websites built for growth. Fast, modern, and responsive solutions for small businesses and individuals.",
+      "Professional writing, editing, SEO, and strategy services to elevate your brand. Get expert support to ensure your content has impact and meets your marketing goals.",
     images: [
       {
-        url: "https://www.greenhousewebdesigns.com/webdesign.webp",
-        width: 768,
-        height: 510,
-        alt: "Web Design",
+        url: "https://www.katieshevlin.com/hero-image.webp",
+        width: 1200,
+        height: 630,
+        alt: "Hero Image",
       },
     ],
   },
-  publishedDate: "2025-05-12",
+  structuredData: {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Content Services by Katie Shevlin",
+    url: "https://www.katieshevlin.com",
+    logo: "https://www.katieshevlin.com/logo.webp",
+    sameAs: ["https://www.linkedin.com/in/katie-shevlin"],
+    description:
+      "Professional writing, editing, SEO, and strategy services to elevate your brand. Get expert support to ensure your content has impact and meets your marketing goals.",
+  },
+  icons: {
+    icon: "/ks-logo.ico",
+  },
+  verification: {
+    google: "yvEo-pqgW1kr_MBEKzqV5uFZ7t3DMOv_uLXHsbnBrwk",
+  },
 };
 
 export default function RootLayout({ children }) {

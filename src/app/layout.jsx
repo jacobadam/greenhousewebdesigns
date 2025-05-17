@@ -89,7 +89,7 @@ export default function RootLayout({ children }) {
         >
           <Background />
           <Nav />
-          {children}
+          <main>{children}</main>
           <Analytics />
           <Footer />
         </ThemeProvider>

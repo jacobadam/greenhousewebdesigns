@@ -18,6 +18,7 @@ const geistMono = Geist_Mono({
 
 export async function generateMetadata() {
   return {
+    metadataBase: new URL("https://www.greenhousewebdesigns.com"),
     title: "Greenhouse Web Designs",
     description:
       "Custom websites built for growth. Greenhouse Web Designs helps businesses and individuals stand out with fast, modern, and responsive web solutions.",

@@ -12,7 +12,7 @@ export default function HomeBenefits() {
           </p>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2">
-          <div className="relative w-full bg-transparent p-5 text-center transition-all duration-500 xl:p-10 border-b xl:border-r border-black dark:border-gray-200 xl:border-b lg:border-b lg:border-r md:border-r md:border-b">
+          <div className="relative w-full bg-zinc-100/50 dark:bg-zinc-950/30 p-5 text-center transition-all duration-500 xl:p-10 border-b xl:border-r border-[#71b468] dark:border-indigo-500 xl:border-b lg:border-b lg:border-r md:border-r md:border-b">
             <div className=" flex justify-center items-center mx-auto mb-5 w-10 h-10 transition-all duration-500">
               <img
                 src="secure.svg"
@@ -28,7 +28,7 @@ export default function HomeBenefits() {
               are our top priority.
             </p>
           </div>
-          <div className="relative w-full bg-transparent p-5 text-center transition-all duration-500 xl:p-10  border-b xl:border-r border-black dark:border-gray-200 xl:border-b lg:border-b lg:border-r md:border-b">
+          <div className="relative w-full bg-zinc-100/50 dark:bg-zinc-950/30 p-5 text-center transition-all duration-500 xl:p-10  border-b xl:border-r border-[#71b468] dark:border-indigo-500 xl:border-b lg:border-b lg:border-r md:border-b">
             <div className=" flex justify-center items-center mx-auto mb-5 w-10 h-10 transition-all duration-500">
               <img
                 src="custom.svg"
@@ -44,7 +44,7 @@ export default function HomeBenefits() {
               are our top priority.
             </p>
           </div>
-          <div className="relative w-full bg-transparent p-5 text-center transition-all duration-500 xl:p-10 border-b border-black dark:border-gray-200 xl:border-b lg:border-b lg:border-r-0 md:border-r md:border-b">
+          <div className="relative w-full bg-zinc-100/50 dark:bg-zinc-950/30 p-5 text-center transition-all duration-500 xl:p-10 border-b border-[#71b468] dark:border-indigo-500 xl:border-b lg:border-b lg:border-r-0 md:border-r md:border-b">
             <div className=" flex justify-center items-center mx-auto mb-5 w-10 h-10 transition-all duration-500">
               <img
                 src="performance.svg"
@@ -60,7 +60,7 @@ export default function HomeBenefits() {
               scoring 90–100 on Google PageSpeed.
             </p>
           </div>
-          <div className="relative w-full bg-transparent p-5 text-center transition-all duration-500 xl:p-10 border-b border-black dark:border-gray-200 xl:border-r  lg:border-r lg:border-b-0  md:border-b">
+          <div className="relative w-full bg-zinc-100/50 dark:bg-zinc-950/30 p-5 text-center transition-all duration-500 xl:p-10 border-b border-[#71b468] dark:border-indigo-500 xl:border-r  lg:border-r lg:border-b-0  md:border-b">
             <div className=" flex justify-center items-center mx-auto mb-5 w-10 h-10 transition-all duration-500">
               <img
                 src="chat.svg"
@@ -76,7 +76,7 @@ export default function HomeBenefits() {
               on a complimentary, no-obligation Zoom call.
             </p>
           </div>
-          <div className="relative w-full bg-transparent p-5 text-center transition-all duration-500 xl:p-10 border-b border-black dark:border-gray-200 xl:border-r  lg:border-r md:border-r md:border-b-0">
+          <div className="relative w-full bg-zinc-100/50 dark:bg-zinc-950/30 p-5 text-center transition-all duration-500 xl:p-10 border-b border-[#71b468] dark:border-indigo-500 xl:border-r  lg:border-r md:border-r md:border-b-0">
             <div className=" flex justify-center items-center mx-auto mb-5 w-10 h-10 transition-all duration-500">
               <img
                 src="scalable.svg"
@@ -92,7 +92,7 @@ export default function HomeBenefits() {
               grows.
             </p>
           </div>
-          <div className="relative w-full bg-transparent p-5 text-center transition-all duration-500 xl:p-10 border-black dark:border-gray-200 ">
+          <div className="relative w-full bg-zinc-100/50 dark:bg-zinc-950/30 p-5 text-center transition-all duration-500 xl:p-10 border-[#71b468] dark:border-indigo-500 ">
             <div className=" flex justify-center items-center mx-auto mb-5 w-10 h-10 transition-all duration-500">
               <img
                 src="support.svg"

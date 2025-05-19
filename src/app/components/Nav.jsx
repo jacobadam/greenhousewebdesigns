@@ -56,13 +56,14 @@ export default function NavBar() {
 
         <div className="hidden items-center gap-2 lg:flex opacity-100">
           {navLinks.map((link) => {
-            const isActive = pathname === link.href;
             return (
               <Link
                 key={link.href}
                 href={link.href}
                 className={`group relative scale-100 overflow-hidden rounded-lg px-4 py-2 transition-transform hover:scale-105 active:scale-95 opacity-100 text-white hover:text-[#6fa96f] dark:hover:text-indigo-500 ${
-                  isActive ? "text-[#6fa96f] dark:text-indigo-500" : ""
+                  pathname === link.href
+                    ? "text-[#6fa96f] dark:text-indigo-500"
+                    : ""
                 }`}
               >
                 {link.label}

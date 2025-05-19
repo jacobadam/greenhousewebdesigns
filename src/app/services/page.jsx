@@ -1,14 +1,6 @@
-"use client";
-
-import React, { useState } from "react";
+import { FiCheckCircle, FiXSquare } from "react-icons/fi";
 
 export default function Services() {
-  const [activeTab, setActiveTab] = useState("tabs-with-pill-1");
-
-  const handleTabClick = (tab) => {
-    setActiveTab(tab);
-  };
-
   return (
     <section
       className="pt-4 sm:pt-8 pb-20 relative bg-transparent flex-grow"
@@ -30,132 +22,152 @@ export default function Services() {
               what matters while I bring your vision to life online.
             </p>
           </div>
-        </div>
-        <div className="mb-4">
-          <div className="tabs">
-            <div className="flex w-full items-center justify-center">
-              <ul className="grid grid-cols-1 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3 gap-4 overflow-x-auto sm:mb-9 lg:mb-16">
-                {[
-                  {
-                    id: "tabs-with-pill-1",
-                    label: "Performance Optimization",
-                  },
-                  {
-                    id: "tabs-with-pill-2",
-                    label: "Custom Built Website",
-                  },
-                  {
-                    id: "tabs-with-pill-3",
-                    label: (
-                      <>
-                        Custom Built Website &
-                        <br />
-                        Full Content Package
-                      </>
-                    ),
-                  },
-                ].map((tab) => (
-                  <li key={tab.id} className="w-full">
-                    <button
-                      onClick={() => handleTabClick(tab.id)}
-                      className={`group flex items-center justify-center text-center gap-4 py-5 lg:py-0 px-6 rounded-2xl text-base font-medium transition-all duration-500 w-full min-h-[80px] sm:min-h-[110px] 
-                        ${
-                          activeTab === tab.id
-                            ? "bg-gradient-to-tr from-[#6fa96f] to-[#71b468] dark:from-indigo-500 dark:to-violet-600 text-white"
-                            : "text-zinc-900 dark:text-zinc-100 hover:bg-gradient-to-tr hover:from-[#6fa96f] hover:to-[#71b468] dark:hover:bg-gradient-to-tr dark:hover:from-indigo-500 dark:hover:to-violet-600 hover:text-white"
-                        }`}
-                      role="tab"
-                    >
-                      {tab.label}
-                    </button>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="">
-              {activeTab === "tabs-with-pill-1" && (
-                <div
-                  id="tabs-with-pill-1"
-                  role="tabpanel"
-                  className="tabcontent"
-                  style={{ display: "block" }}
-                >
-                  <section className="">
-                    <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-4 lg:px-6 flex justify-center text-center lg:text-left">
-                      <div className="max-w-screen-lg">
-                        <h2 className="mb-4 text-2xl lg:text-3xl tracking-tight font-bold text-zinc-900 dark:text-zinc-100">
-                          Performance Optimization
-                        </h2>
-                        <p className="mb-4 font-light text-zinc-800 dark:text-zinc-200">
-                          This includes a full assessment of your current
-                          website to identify key areas for improvement. During
-                          a detailed feedback session, I’ll gather your specific
-                          requirements and prioritize the changes that will have
-                          the most impact on your site’s performance. You’ll
-                          have the opportunity to review all changes to ensure
-                          everything meets your expectations.
-                        </p>
-                      </div>
-                    </div>
-                  </section>
-                </div>
-              )}
-              {activeTab === "tabs-with-pill-2" && (
-                <div
-                  id="tabs-with-pill-2"
-                  role="tabpanel"
-                  className="tabcontent"
-                  style={{ display: "block" }}
-                >
-                  <section className="">
-                    <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-4 lg:px-6 flex justify-center text-center lg:text-left">
-                      <div className="max-w-screen-lg">
-                        <h2 className="mb-4 text-2xl lg:text-3xl tracking-tight font-bold text-zinc-900 dark:text-zinc-100">
-                          Custom Built Website
-                        </h2>
-                        <p className="mb-4 font-light text-zinc-800 dark:text-zinc-200">
-                          I’ll work closely with you to understand your vision
-                          and requirements during a comprehensive planning
-                          session. From there, I’ll create a fully optimized
-                          website with up to five pages. This package includes
-                          two reviews for refinements.
-                        </p>
-                      </div>
-                    </div>
-                  </section>
-                </div>
-              )}
-              {activeTab === "tabs-with-pill-3" && (
-                <div
-                  id="tabs-with-pill-3"
-                  role="tabpanel"
-                  className="tabcontent"
-                  style={{ display: "block" }}
-                >
-                  <section className="">
-                    <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-4 lg:px-6 flex justify-center text-center lg:text-left">
-                      <div className="max-w-screen-lg">
-                        <h2 className="mb-4 text-2xl lg:text-3xl tracking-tight font-bold text-zinc-900 dark:text-zinc-100">
-                          Custom Built Website and Full Content Package
-                        </h2>
-                        <p className="mb-4 font-light text-zinc-800 dark:text-zinc-200">
-                          This comprehensive package includes everything in the
-                          custom build service plus professionally crafted
-                          content for every page. All content will align with
-                          your brand voice and is tailored to engage your
-                          audience. An in-depth SEO analysis will ensure that
-                          all content contributes to your site’s visibility and
-                          business growth.
-                        </p>
-                      </div>
-                    </div>
-                  </section>
-                </div>
-              )}
-            </div>
+          <div className="mt-6 grid grid-cols-1 gap-6 lg:mt-12 lg:grid-cols-3 lg:gap-8">
+            <PriceColumn
+              title="Performance Optimization"
+              statement="Identify and implement high-impact improvements to boost your website's speed and efficiency."
+              items={[
+                {
+                  children: "Full Website Performance Audit",
+                  checked: true,
+                },
+                {
+                  children: "Detailed Feedback & Planning Session",
+                  checked: true,
+                },
+                {
+                  children: "Professional Copywriting for All Pages",
+                  checked: true,
+                },
+                {
+                  children: "Ongoing Monitoring (Optional)",
+                  checked: true,
+                },
+                {
+                  children: "Design And Development",
+                  checked: false,
+                },
+                {
+                  children: "Hosting",
+                  checked: false,
+                },
+              ]}
+            />
+            <PriceColumn
+              title="Custom Built Website"
+              statement="Get a fully responsive and optimized site tailored to your vision, with room for iteration."
+              highlight
+              items={[
+                {
+                  children: "Design And Development",
+                  checked: true,
+                },
+                {
+                  children: "Hosting",
+                  checked: true,
+                },
+                {
+                  children: "2 Feedback Sessions",
+                  checked: true,
+                },
+                {
+                  children: "Unlimited Edits",
+                  checked: true,
+                },
+                {
+                  children: "Professional Copywriting for All Pages",
+                  checked: false,
+                },
+                {
+                  children: "24/7 Support",
+                  checked: false,
+                },
+                {
+                  children: "Optional Blog Setup",
+                  checked: false,
+                },
+              ]}
+            />
+            <PriceColumn
+              title="Full Content Package"
+              statement="Includes everything in the custom build plus engaging, SEO-driven content written for your brand."
+              items={[
+                {
+                  children: "Design And Development",
+                  checked: true,
+                },
+
+                {
+                  children: "Hosting",
+                  checked: true,
+                },
+                {
+                  children: "2 Feedback Sessions",
+                  checked: true,
+                },
+                {
+                  children: "Unlimited Edits",
+                  checked: true,
+                },
+                {
+                  children: "Professional Copywriting for All Pages",
+                  checked: true,
+                },
+                {
+                  children: "24/7 Support",
+                  checked: true,
+                },
+                {
+                  children: "Optional Blog Setup",
+                  checked: true,
+                },
+              ]}
+            />
           </div>
         </div>
       </div>
     </section>
   );
 }
+const PriceColumn = ({ highlight, title, statement, items }) => {
+  return (
+    <div
+      className={`relative w-full rounded-lg p-6 md:p-8 bg-zinc-100 dark:bg-zinc-950 ${
+        highlight ? "border-2 border-[#6fa96f] dark:border-indigo-500" : ""
+      }`}
+    >
+      {highlight && (
+        <span className="absolute right-4 top-0 -translate-y-1/2 rounded-full bg-[#6fa96f] dark:bg-indigo-500 px-2 py-0.5 text-sm font-bold text-white">
+          Most Popular
+        </span>
+      )}
+
+      <h1 className="mb-8 text-xl font-semibold text-zinc-800 dark:text-zinc-200">
+        {title}
+      </h1>
+
+      <p className="mb-8 text- text-zinc-800 dark:text-zinc-200">{statement}</p>
+
+      <div className="mb-8 space-y-2">
+        {items.map((i) => (
+          <CheckListItem key={i.children} checked={i.checked}>
+            {i.children}
+          </CheckListItem>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+const CheckListItem = ({ children, checked }) => {
+  return (
+    <div className="flex items-center gap-2 text-base text-zinc-800 dark:text-zinc-200 justify-start text-left">
+      {checked ? (
+        <FiCheckCircle className="text-xl text-[#6fa96f] dark:text-indigo-500" />
+      ) : (
+        <FiXSquare className="text-xl text-zinc-400" />
+      )}
+      {children}
+    </div>
+  );
+};

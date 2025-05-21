@@ -60,9 +60,9 @@ export default function NavBar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`group relative scale-100 overflow-hidden rounded-lg px-4 py-2 transition-transform hover:scale-105 active:scale-95 opacity-100 hover:text-[#6fa96f] dark:hover:text-indigo-500 ${
+                className={`group relative scale-100 overflow-hidden rounded-lg px-4 py-2 transition-transform hover:scale-105 active:scale-95 opacity-100 hover:text-lightmode dark:hover:text-darkmode ${
                   pathname === link.href
-                    ? "text-[#6fa96f] dark:text-indigo-500"
+                    ? "text-lightmode dark:text-darkmode"
                     : ""
                 }`}
               >
@@ -92,7 +92,7 @@ export default function NavBar() {
                   href={link.href}
                   className={`text-sm lg:text-base font-medium hover:font-bold transition-all duration-500 opacity-100 ${
                     pathname === link.href
-                      ? "text-[#6fa96f] dark:text-indigo-500"
+                      ? "text-lightmode dark:text-darkmode"
                       : "text-white"
                   }`}
                   onClick={() => {

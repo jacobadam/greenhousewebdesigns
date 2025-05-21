@@ -78,7 +78,7 @@ export default function Contact() {
           <div className="p-4 rounded-lg">
             {messageSent && (
               <p
-                className="text-center text-[#6fa96f] dark:text-indigo-600 text-xl font-bold"
+                className="text-center text-lightmode dark:text-indigo-600 text-xl font-bold"
                 aria-live="polite"
               >
                 Message sent!
@@ -116,7 +116,7 @@ export default function Contact() {
                   name="name"
                   required
                   aria-required="true"
-                  className="w-full border rounded-md px-4 py-2 bg-white dark:bg-zinc-100 focus:ring-2 focus:ring-[#6fa96f] dark:focus:ring-indigo-500 outline-none"
+                  className="w-full border rounded-md px-4 py-2 bg-white dark:bg-zinc-100 focus:ring-2 focus:ring-lightmode dark:focus:ring-darkmode outline-none"
                 />
               </div>
               <div>
@@ -144,7 +144,7 @@ export default function Contact() {
                   id="email"
                   name="email"
                   required
-                  className="w-full border rounded-md px-4 py-2 bg-white dark:bg-zinc-100 focus:ring-2 focus:ring-[#6fa96f] dark:focus:ring-indigo-500 outline-none"
+                  className="w-full border rounded-md px-4 py-2 bg-white dark:bg-zinc-100 focus:ring-2 focus:ring-lightmode dark:focus:ring-darkmode outline-none"
                 />
               </div>
               <div>
@@ -173,14 +173,14 @@ export default function Contact() {
                   type="text"
                   required
                   rows="4"
-                  className="w-full border rounded-md px-4 py-2 bg-white dark:bg-zinc-100 focus:ring-2 focus:ring-[#6fa96f] dark:focus:ring-indigo-500 outline-none"
+                  className="w-full border rounded-md px-4 py-2 bg-white dark:bg-zinc-100 focus:ring-2 focus:ring-lightmode dark:focus:ring-darkmode outline-none"
                 ></textarea>
               </div>
               <button
                 type="submit"
                 value="Send"
                 title="Submit your message"
-                className="flex justify-center items-center relative h-[50px] w-40 overflow-hidden border border-[#6fa96f] dark:border-indigo-500 bg-[#6fa96f] dark:bg-transparent px-3 text-zinc-100 dark:text-indigo-500 dark:hover:text-white hover:shadow-2xl before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#6fa96f] dark:before:bg-indigo-500 before:transition-all before:duration-500 hover:text-white hover:shadow-[#6fa96f] dark:hover:shadow-indigo-500 hover:before:left-0 hover:before:w-full rounded-full font-semibold mt-4"
+                className="flex justify-center items-center relative h-[50px] w-40 overflow-hidden border border-lightmode dark:border-darkmode bg-lightmode dark:bg-transparent px-3 text-zinc-100 dark:text-darkmode dark:hover:text-white hover:shadow-2xl before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-lightmode dark:before:bg-darkmode before:transition-all before:duration-500 hover:text-white hover:shadow-lightmode dark:hover:shadow-darkmode hover:before:left-0 hover:before:w-full rounded-full font-semibold mt-4"
               >
                 <span className="relative z-3">Submit</span>
               </button>

@@ -133,11 +133,11 @@ const PriceColumn = ({ highlight, title, statement, items }) => {
   return (
     <div
       className={`relative w-full rounded-lg p-6 md:p-8 bg-zinc-100 dark:bg-zinc-950 ${
-        highlight ? "border-2 border-[#6fa96f] dark:border-indigo-500" : ""
+        highlight ? "border-2 border-lightmode dark:border-darkmode" : ""
       }`}
     >
       {highlight && (
-        <span className="absolute right-4 top-0 -translate-y-1/2 rounded-full bg-[#6fa96f] dark:bg-indigo-500 px-2 py-0.5 text-sm font-bold text-white">
+        <span className="absolute right-4 top-0 -translate-y-1/2 rounded-full bg-lightmode dark:bg-darkmode px-2 py-0.5 text-sm font-bold text-white">
           Most Popular
         </span>
       )}
@@ -163,7 +163,7 @@ const CheckListItem = ({ children, checked }) => {
   return (
     <div className="flex items-center gap-2 text-base text-zinc-800 dark:text-zinc-200 justify-start text-left">
       {checked ? (
-        <FiCheckCircle className="text-xl text-[#6fa96f] dark:text-indigo-500" />
+        <FiCheckCircle className="text-xl text-lightmode dark:text-darkmode" />
       ) : (
         <FiXSquare className="text-xl text-zinc-400" />
       )}

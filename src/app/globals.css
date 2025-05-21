@@ -21,6 +21,11 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+@theme {
+  --color-lightmode: #6fa96f;
+  --color-darkmode: #6366f1;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);

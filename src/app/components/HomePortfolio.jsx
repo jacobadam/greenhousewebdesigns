@@ -35,10 +35,10 @@ export default function HomePortfolio() {
               </div>
               <button
                 aria-label="Visit Content Services Portfolio site"
-                className="border border-[#6fa96f] dark:border-indigo-500 py-2 px-4 rounded-full transition-all duration-300 group-hover:bg-[#6fa96f] dark:group-hover:bg-indigo-500 cursor-pointer"
+                className="border border-lightmode dark:border-darkmode py-2 px-4 rounded-full transition-all duration-300 group-hover:bg-lightmode dark:group-hover:bg-darkmode cursor-pointer"
               >
                 <svg
-                  className="stroke-[#6fa96f] dark:stroke-indigo-500 transition-all duration-300 group-hover:stroke-white"
+                  className="stroke-lightmode dark:stroke-darkmode transition-all duration-300 group-hover:stroke-white"
                   xmlns="http://www.w3.org/2000/svg"
                   width={17}
                   height={16}
@@ -82,10 +82,10 @@ export default function HomePortfolio() {
               </div>
               <button
                 aria-label="Visit Podiatry Business site"
-                className="border border-[#6fa96f] dark:border-indigo-500 py-2 px-4 rounded-full transition-all duration-300 group-hover:bg-[#6fa96f] dark:group-hover:bg-indigo-500 cursor-pointer"
+                className="border border-lightmode dark:border-darkmode py-2 px-4 rounded-full transition-all duration-300 group-hover:bg-lightmode dark:group-hover:bg-darkmode cursor-pointer"
               >
                 <svg
-                  className="stroke-[#6fa96f] dark:stroke-indigo-500 transition-all duration-300 group-hover:stroke-white"
+                  className="stroke-lightmode dark:stroke-darkmode transition-all duration-300 group-hover:stroke-white"
                   xmlns="http://www.w3.org/2000/svg"
                   width={17}
                   height={16}

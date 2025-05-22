@@ -63,7 +63,7 @@ export default function NavBar() {
                 className={`group relative scale-100 overflow-hidden rounded-lg px-4 py-2 transition-transform hover:scale-105 active:scale-95 opacity-100 hover:text-lightmode dark:hover:text-darkmode ${
                   pathname === link.href
                     ? "text-lightmode dark:text-darkmode"
-                    : ""
+                    : "text-white"
                 }`}
               >
                 {link.label}

@@ -1,15 +1,28 @@
+// app/theme/ThemeProviderWrapper.jsx
 "use client";
 
-import React from "react";
-import dynamic from "next/dynamic";
+import { ThemeProvider } from "next-themes";
+import { useEffect, useState } from "react";
 
-const ClientThemeProvider = dynamic(
-  () => import("next-themes").then((e) => e.ThemeProvider),
-  {
-    ssr: false,
+export default function ThemeProviderWrapper({ children }) {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return <>{children}</>;
   }
-);
 
-export default function ThemeProvider({ children, ...props }) {
-  return <ClientThemeProvider {...props}>{children}</ClientThemeProvider>;
+  return (
+    <ThemeProvider
+      attribute="class"
+      defaultTheme="system"
+      enableSystem
+      disableTransitionOnChange
+    >
+      {children}
+    </ThemeProvider>
+  );
 }

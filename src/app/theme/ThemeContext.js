@@ -1,4 +1,3 @@
-// app/theme/ThemeProviderWrapper.jsx
 "use client";
 
 import { ThemeProvider } from "next-themes";

@@ -39,14 +39,14 @@ export default function NavBar() {
 
   return (
     <nav
-      className={`bg-black fixed top-0 z-20 overflow-hidden border-white/10 bg-gradient-to-br from-white/20 to-white/5 backdrop-blur px-4 transition-all duration-300 w-auto ${
+      className={`bg-black fixed top-0 z-20 overflow-hidden border-white/10 bg-gradient-to-br from-white/20 to-white/5 backdrop-blur px-2 sm:px-4 transition-all duration-300 w-auto ${
         isScrolled
           ? "left-0 right-0"
           : "mx-auto left-6 right-6 top-6 rounded-2xl"
       }`}
     >
       <div className="flex items-center justify-between">
-        <Link href="/" className="p-2" onClick={scrollToTop}>
+        <Link href="/" className="px-1 py-2 sm:p-2" onClick={scrollToTop}>
           <img
             src="/greenhouse-logo.svg"
             alt="Greenhouse Web Designs Logo"

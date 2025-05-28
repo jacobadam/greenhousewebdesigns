@@ -46,7 +46,7 @@ export default function NavBar() {
       }`}
     >
       <div className="flex items-center justify-between">
-        <Link href="/" className="px-1 py-2 sm:p-2" onClick={scrollToTop}>
+        <Link href="/" className="py-2 sm:p-2" onClick={scrollToTop}>
           <img
             src="/greenhouse-logo.svg"
             alt="Greenhouse Web Designs Logo"

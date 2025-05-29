@@ -49,7 +49,7 @@ export const metadata = {
       "Custom websites built for growth. Fast, modern, and responsive solutions for small businesses and individuals.",
     images: [
       {
-        url: "https://www.greenhousewebdesigns.com/greenhouse-logo-green.png",
+        url: "https://www.greenhousewebdesigns.com/greenhouse-logo-og.png",
         width: 768,
         height: 510,
         alt: "Web Design",
@@ -65,7 +65,7 @@ export const metadata = {
       "Custom websites built for growth. Fast, modern, and responsive solutions for small businesses and individuals.",
     images: [
       {
-        url: "https://www.greenhousewebdesigns.com/greenhouse-logo-green.png",
+        url: "https://www.greenhousewebdesigns.com/greenhouse-logo-og.png",
         width: 768,
         height: 510,
         alt: "Web Design",

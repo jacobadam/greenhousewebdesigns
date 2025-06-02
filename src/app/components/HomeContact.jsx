@@ -11,10 +11,10 @@ export default function HomeContact() {
 
     emailjs
       .sendForm(
-        "contact_service",
+        "contact_services",
         "contact_form",
         form.current,
-        "ojNtN4lneN6w9tjlE"
+        "v3qyEvU0LzN9-I1Kt"
       )
       .then(
         () => {
@@ -37,7 +37,7 @@ export default function HomeContact() {
       </h1>
       {messageSent && (
         <p
-          className="text-center text-lightmode text-xl font-bold"
+          className="text-center text-lightmode dark:text-darkmode text-xl font-bold py-4"
           aria-live="polite"
           role="alert"
         >
@@ -46,7 +46,7 @@ export default function HomeContact() {
       )}
       {errorMessage && (
         <p
-          className="text-center text-red-600 text-xl font-bold"
+          className="text-center text-red-600 text-xl font-bold py-4"
           aria-live="assertive"
           role="alert"
         >
@@ -57,7 +57,7 @@ export default function HomeContact() {
         ref={form}
         onSubmit={sendEmail}
         id="contact-form"
-        className="w-full max-w-lg p-6"
+        className="w-full max-w-lg px-6"
       >
         <div className="relative mb-6">
           <label

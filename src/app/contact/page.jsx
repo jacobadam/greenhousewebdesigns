@@ -11,8 +11,8 @@ export default function Contact() {
     e.preventDefault();
 
     emailjs
-      .sendForm("contact_service", "contact_form", form.current, {
-        publicKey: "ojNtN4lneN6w9tjlE",
+      .sendForm("contact_services", "contact_form", form.current, {
+        publicKey: "v3qyEvU0LzN9-I1Kt",
       })
       .then(
         () => {
@@ -116,7 +116,7 @@ export default function Contact() {
                   name="name"
                   required
                   aria-required="true"
-                  className="w-full border rounded-md px-4 py-2 bg-white dark:bg-zinc-100 focus:ring-2 focus:ring-lightmode dark:focus:ring-darkmode outline-none"
+                  className="w-full border rounded-md px-4 py-2 bg-white dark:bg-zinc-100 focus:ring-2 focus:ring-lightmode dark:focus:ring-darkmode outline-none text-black"
                 />
               </div>
               <div>
@@ -144,7 +144,7 @@ export default function Contact() {
                   id="email"
                   name="email"
                   required
-                  className="w-full border rounded-md px-4 py-2 bg-white dark:bg-zinc-100 focus:ring-2 focus:ring-lightmode dark:focus:ring-darkmode outline-none"
+                  className="w-full border rounded-md px-4 py-2 bg-white dark:bg-zinc-100 focus:ring-2 focus:ring-lightmode dark:focus:ring-darkmode outline-none text-black"
                 />
               </div>
               <div>
@@ -173,7 +173,7 @@ export default function Contact() {
                   type="text"
                   required
                   rows="4"
-                  className="w-full border rounded-md px-4 py-2 bg-white dark:bg-zinc-100 focus:ring-2 focus:ring-lightmode dark:focus:ring-darkmode outline-none"
+                  className="w-full border rounded-md px-4 py-2 bg-white dark:bg-zinc-100 focus:ring-2 focus:ring-lightmode dark:focus:ring-darkmode outline-none text-black"
                 ></textarea>
               </div>
               <button

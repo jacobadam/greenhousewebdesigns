@@ -1,11 +1,10 @@
-"use client";
-
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 export default function Contact() {
   const form = useRef();
   const [messageSent, setMessageSent] = useState(false);
+  const [errorMessage, setErrorMessage] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -22,6 +21,7 @@ export default function Contact() {
         },
         (error) => {
           console.log("Failed...", error.text);
+          setErrorMessage("Something went wrong. Please try again.");
         }
       );
 
@@ -82,6 +82,15 @@ export default function Contact() {
                 aria-live="polite"
               >
                 Message sent!
+              </p>
+            )}
+            {errorMessage && (
+              <p
+                className="text-center text-red-600 text-xl font-bold py-4"
+                aria-live="assertive"
+                role="alert"
+              >
+                {errorMessage}
               </p>
             )}
             <form

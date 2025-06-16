@@ -1,33 +1,38 @@
 "use client";
 
 import React, { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
 
 export default function Contact() {
   const form = useRef();
   const [messageSent, setMessageSent] = useState(false);
   const [errorMessage, setErrorMessage] = useState(false);
 
-  const sendEmail = (e) => {
+  const sendMessage = async (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm("contact_services", "contact_form", form.current, {
-        publicKey: "v3qyEvU0LzN9-I1Kt",
-      })
-      .then(
-        () => {
-          console.log("Success!");
-          setMessageSent(true);
-          setTimeout(() => setMessageSent(false), 5000);
-        },
-        (error) => {
-          console.log("Failed...", error.text);
-          setErrorMessage("Something went wrong. Please try again.");
-        }
-      );
+    const formData = new FormData(form.current);
+    formData.append("access_key", "c1eb05ac-6ab1-4a50-a826-9ddce24dca20");
 
-    e.target.reset();
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+
+      const data = await res.json();
+
+      if (data.success) {
+        setMessageSent(true);
+        setErrorMessage(false);
+        form.current.reset();
+        setTimeout(() => setMessageSent(false), 5000);
+      } else {
+        setErrorMessage("Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      setErrorMessage("Something went wrong. Please try again.");
+    }
   };
 
   return (
@@ -95,12 +100,19 @@ export default function Contact() {
                 {errorMessage}
               </p>
             )}
+
             <form
-              className="space-y-4"
               ref={form}
-              onSubmit={sendEmail}
+              onSubmit={sendMessage}
+              className="space-y-4"
               aria-labelledby="contact-form"
             >
+              <input
+                type="hidden"
+                name="access_key"
+                value="c1eb05ac-6ab1-4a50-a826-9ddce24dca20"
+              />
+
               <div>
                 <label
                   htmlFor="name"
@@ -130,6 +142,7 @@ export default function Contact() {
                   className="w-full border rounded-md px-4 py-2 bg-white dark:bg-zinc-100 focus:ring-2 focus:ring-lightmode dark:focus:ring-darkmode outline-none text-black"
                 />
               </div>
+
               <div>
                 <label
                   htmlFor="email"
@@ -155,9 +168,11 @@ export default function Contact() {
                   id="email"
                   name="email"
                   required
+                  aria-required="true"
                   className="w-full border rounded-md px-4 py-2 bg-white dark:bg-zinc-100 focus:ring-2 focus:ring-lightmode dark:focus:ring-darkmode outline-none text-black"
                 />
               </div>
+
               <div>
                 <label
                   htmlFor="message"
@@ -181,16 +196,15 @@ export default function Contact() {
                 <textarea
                   id="message"
                   name="message"
-                  type="text"
                   required
                   rows="4"
+                  aria-required="true"
                   className="w-full border rounded-md px-4 py-2 bg-white dark:bg-zinc-100 focus:ring-2 focus:ring-lightmode dark:focus:ring-darkmode outline-none text-black"
-                ></textarea>
+                />
               </div>
+
               <button
                 type="submit"
-                value="Send"
-                title="Submit your message"
                 className="flex justify-center items-center relative h-[50px] w-40 overflow-hidden border border-lightmode dark:border-darkmode bg-lightmode dark:bg-transparent px-3 text-zinc-100 dark:text-darkmode dark:hover:text-white hover:shadow-2xl before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-lightmode dark:before:bg-darkmode before:transition-all before:duration-500 hover:text-white hover:shadow-lightmode dark:hover:shadow-darkmode hover:before:left-0 hover:before:w-full rounded-full font-semibold mt-4"
               >
                 <span className="relative z-3">Submit</span>

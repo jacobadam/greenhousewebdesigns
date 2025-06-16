@@ -1,33 +1,37 @@
 import React, { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
 
 export default function HomeContact() {
   const form = useRef();
   const [messageSent, setMessageSent] = useState(false);
   const [errorMessage, setErrorMessage] = useState(false);
 
-  const sendEmail = (e) => {
+  const sendMessage = async (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "contact_services",
-        "contact_form",
-        form.current,
-        "v3qyEvU0LzN9-I1Kt"
-      )
-      .then(
-        () => {
-          console.log("Success!");
-          e.target.reset();
-          setMessageSent(true);
-          setTimeout(() => setMessageSent(false), 5000);
-        },
-        (error) => {
-          console.log("Failed...", error.text);
-          setErrorMessage("Something went wrong. Please try again.");
-        }
-      );
+    const formData = new FormData(form.current);
+    formData.append("access_key", "c1eb05ac-6ab1-4a50-a826-9ddce24dca20");
+
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+
+      const data = await res.json();
+
+      if (data.success) {
+        form.current.reset();
+        setMessageSent(true);
+        setErrorMessage(false);
+        setTimeout(() => setMessageSent(false), 5000);
+      } else {
+        setErrorMessage("Something went wrong. Please try again.");
+        setMessageSent(false);
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      setErrorMessage("Something went wrong. Please try again.");
+    }
   };
 
   return (
@@ -35,11 +39,11 @@ export default function HomeContact() {
       <h1 className="text-2xl xl:text-3xl font-bold text-center pt-8 text-black dark:text-white">
         Contact
       </h1>
+
       {messageSent && (
         <p
           className="text-center text-lightmode dark:text-darkmode text-xl font-bold py-4"
           aria-live="polite"
-          role="alert"
         >
           Message sent!
         </p>
@@ -53,12 +57,13 @@ export default function HomeContact() {
           {errorMessage}
         </p>
       )}
-      <form
-        ref={form}
-        onSubmit={sendEmail}
-        id="contact-form"
-        className="w-full max-w-lg px-6"
-      >
+
+      <form ref={form} onSubmit={sendMessage} className="w-full max-w-lg px-6">
+        <input
+          type="hidden"
+          name="access_key"
+          value="c1eb05ac-6ab1-4a50-a826-9ddce24dca20"
+        />
         <div className="relative mb-6">
           <label
             htmlFor="name"
@@ -153,7 +158,6 @@ export default function HomeContact() {
 
         <button
           type="submit"
-          value="Send"
           title="Submit your message"
           className="flex justify-center items-center relative h-[50px] w-40 overflow-hidden border border-lightmode dark:border-darkmode bg-lightmode dark:bg-darkmode px-3 text-zinc-100 dark:text-black dark:hover:text-white hover:shadow-2xl before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-lightmode dark:before:bg-darkmode before:transition-all before:duration-500 hover:text-white hover:shadow-lightmode dark:hover:shadow-darkmode hover:before:left-0 hover:before:w-full rounded-full font-semibold mt-4"
         >

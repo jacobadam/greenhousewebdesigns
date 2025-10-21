@@ -76,7 +76,7 @@ export default function HomeServicesCard() {
                       height="32"
                     />
                   </div>
-                  <h2 className="text-zinc-900 dark:text-zinc-200 font-bold tracking-wide mt-4 text-lg">
+                  <h2 className="text-lightmode dark:text-darkmode font-bold tracking-wide mt-4 text-lg">
                     {service.title}
                   </h2>
                   <p className="mt-2 text-zinc-800 dark:text-zinc-200 tracking-wide leading-relaxed text-base">

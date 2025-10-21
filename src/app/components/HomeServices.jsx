@@ -2,8 +2,8 @@ import HomeServicesCard from "./HomeServicesCard";
 
 export default function HomeServices() {
   return (
-    <section className="w-full h-full py-24 md:py-8 flex items-center justify-center bg-zinc-200 dark:bg-zinc-950">
-      <div className="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+    <section className="w-full h-full py-24 md:py-0 flex items-center justify-center bg-zinc-200 dark:bg-zinc-950">
+      <div className="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-4">
         <div className="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16">
           <div className="lg:w-4/5 flex flex-col items-center justify-center mx-auto max-w-lg text-center lg:mx-0 ltr:lg:text-left rtl:lg:text-right">
             <h1 className="text-2xl xl:text-3xl font-bold mb-2 text-black dark:text-white">

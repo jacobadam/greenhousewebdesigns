@@ -6,10 +6,11 @@ export default function HomepageHero() {
   const words = text.split(" ");
   return (
     <section
-      className="h-screen w-screen sm:pb-20 bg-transparent"
+      className="h-screen w-screen sm:pb-8 bg-transparent"
       style={{
         paddingTop: "clamp(8rem, 10vw, 8rem)",
         minHeight: "calc(100vh - clamp(4rem, 10vw, 8rem))",
+        paddingBottom: "0px",
       }}
     >
       <div className="h-full flex flex-col lg:flex-row items-center justify-center relative max-w-screen-xl mx-auto px-4 pb-16 md:pb-0 md:px-8">

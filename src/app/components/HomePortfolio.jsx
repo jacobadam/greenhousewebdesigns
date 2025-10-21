@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function HomePortfolio() {
   return (
-    <section className="w-full h-full py-40 relative bg-zinc-200 dark:bg-zinc-950">
+    <section className="w-full h-full py-40 lg:py-8 relative bg-zinc-200 dark:bg-zinc-950">
       <div className="w-full max-w-2xl md:max-w-7xl px-6 lg:px-8 mx-auto">
         <h1 className="text-2xl xl:text-3xl font-bold text-black dark:text-white mb-16 text-center lg:text-left">
           Professional Project Achievements

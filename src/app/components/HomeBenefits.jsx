@@ -1,6 +1,6 @@
 export default function HomeBenefits() {
   return (
-    <section className="w-full py-12 bg-transparent">
+    <section className="w-full py-12 lg:py-4 bg-transparent">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-14 text-center">
           <h1 className="text-2xl xl:text-3xl font-bold text-center text-black dark:text-white leading-[3.25rem] mb-5 max-w-full lg:max-w-3xl lg:mx-auto">

@@ -59,11 +59,6 @@ export default function HomeContact() {
       )}
 
       <form ref={form} onSubmit={sendMessage} className="w-full max-w-lg px-6">
-        <input
-          type="hidden"
-          name="access_key"
-          value="c1eb05ac-6ab1-4a50-a826-9ddce24dca20"
-        />
         <div className="relative mb-6">
           <label
             htmlFor="name"

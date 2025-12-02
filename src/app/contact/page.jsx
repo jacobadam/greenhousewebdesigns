@@ -107,12 +107,6 @@ export default function Contact() {
               className="space-y-4"
               aria-labelledby="contact-form"
             >
-              <input
-                type="hidden"
-                name="access_key"
-                value="c1eb05ac-6ab1-4a50-a826-9ddce24dca20"
-              />
-
               <div>
                 <label
                   htmlFor="name"

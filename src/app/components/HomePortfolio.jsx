@@ -18,7 +18,7 @@ export default function HomePortfolio() {
             <div className="w-full h-full">
               <Image
                 className="w-full h-full rounded object-contain transform transition-transform duration-300 group-hover:scale-105"
-                src="/studio-24-homepage.webp"
+                src="/studio24-homepage.webp"
                 alt="Hair Salon Website"
                 width={2830}
                 height={1346}
@@ -65,7 +65,7 @@ export default function HomePortfolio() {
             <div className="w-full h-full">
               <Image
                 className="w-full h-full rounded object-contain transform transition-transform duration-300 group-hover:scale-105"
-                src="/animal-shepherd-homepage.webp"
+                src="/animalshepherd-homepage.webp"
                 alt="Animal Sanctuary Website"
                 width={2830}
                 height={1346}

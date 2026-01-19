@@ -10,6 +10,100 @@ export default function HomePortfolio() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <a
+            href="https://www.studio-24.ca/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex items-center flex-col gap-8 w-full cursor-pointer"
+          >
+            <div className="w-full h-full">
+              <Image
+                className="w-full h-full rounded object-contain transform transition-transform duration-300 group-hover:scale-105"
+                src="/studio-24-homepage.webp"
+                alt="Hair Salon Website"
+                width={2830}
+                height={1346}
+              />
+            </div>
+            <div className="flex items-center justify-between max-w-101.5 md:max-w-full w-full lg:px-0">
+              <div className="block">
+                <h2 className="text-2xl font-semibold text-zinc-900 dark:text-white mb-1">
+                  Hair Salon
+                </h2>
+                <h3 className="font-medium text-lg text-zinc-800 dark:text-zinc-200">
+                  Beauty
+                </h3>
+              </div>
+              <button
+                aria-label="Visit Hair Salon site"
+                className="border border-lightmode dark:border-darkmode py-2 px-4 rounded-full transition-all duration-300 group-hover:bg-lightmode dark:group-hover:bg-darkmode cursor-pointer"
+              >
+                <svg
+                  className="stroke-lightmode dark:stroke-darkmode transition-all duration-300 group-hover:stroke-white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width={17}
+                  height={16}
+                  viewBox="0 0 17 16"
+                  fill="none"
+                >
+                  <path
+                    d="M9.62553 4L13.6664 8.0409M13.6664 8.0409L9.62553 12.0818M13.6664 8.0409L1.6665 8.0409"
+                    stroke=""
+                    strokeWidth="1.6"
+                    strokeLinecap="round"
+                  />
+                </svg>
+              </button>
+            </div>
+          </a>
+
+          <a
+            href="https://www.animalshepherd.org/en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex items-center flex-col gap-8 w-full cursor-pointer"
+          >
+            <div className="w-full h-full">
+              <Image
+                className="w-full h-full rounded object-contain transform transition-transform duration-300 group-hover:scale-105"
+                src="/animal-shepherd-homepage.webp"
+                alt="Animal Sanctuary Website"
+                width={2830}
+                height={1346}
+              />
+            </div>
+            <div className="flex items-center justify-between max-w-101.5 md:max-w-full w-full lg:px-0">
+              <div className="block">
+                <h2 className="text-2xl font-semibold text-zinc-900 dark:text-white mb-1">
+                  Animal Sanctuary
+                </h2>
+                <h3 className="font-medium text-lg text-zinc-800 dark:text-zinc-200">
+                  Nonprofit
+                </h3>
+              </div>
+              <button
+                aria-label="Visit Animal Sanctuary site"
+                className="border border-lightmode dark:border-darkmode py-2 px-4 rounded-full transition-all duration-300 group-hover:bg-lightmode dark:group-hover:bg-darkmode cursor-pointer"
+              >
+                <svg
+                  className="stroke-lightmode dark:stroke-darkmode transition-all duration-300 group-hover:stroke-white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width={17}
+                  height={16}
+                  viewBox="0 0 17 16"
+                  fill="none"
+                >
+                  <path
+                    d="M9.62553 4L13.6664 8.0409M13.6664 8.0409L9.62553 12.0818M13.6664 8.0409L1.6665 8.0409"
+                    stroke=""
+                    strokeWidth="1.6"
+                    strokeLinecap="round"
+                  />
+                </svg>
+              </button>
+            </div>
+          </a>
+
+          <a
             href="https://www.katieshevlin.com/"
             target="_blank"
             rel="noopener noreferrer"
@@ -24,7 +118,7 @@ export default function HomePortfolio() {
                 height={1348}
               />
             </div>
-            <div className="flex items-center justify-between max-w-[406px] md:max-w-full w-full lg:px-0">
+            <div className="flex items-center justify-between max-w-101.5 md:max-w-full w-full lg:px-0">
               <div className="block">
                 <h2 className="text-2xl font-semibold text-zinc-900 dark:text-white mb-1">
                   Content Services Portfolio
@@ -71,7 +165,7 @@ export default function HomePortfolio() {
                 height={1346}
               />
             </div>
-            <div className="flex items-center justify-between max-w-[406px] md:max-w-full w-full lg:px-0">
+            <div className="flex items-center justify-between max-w-101.5 md:max-w-full w-full lg:px-0">
               <div className="block">
                 <h2 className="text-2xl font-semibold text-zinc-900 dark:text-white mb-1">
                   Podiatry Business

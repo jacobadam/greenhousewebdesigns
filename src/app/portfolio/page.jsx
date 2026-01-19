@@ -1,7 +1,25 @@
+import Image from "next/image";
+
 export default function Portfolio() {
   const portfolioData = [
     {
-      imgSrc: "https://www.katieshevlin.com/hero-image.webp",
+      src: "/studio24-homepage.webp",
+      altText: "Hair Salon Business",
+      title: "Hair Salon Business",
+      description:
+        "Developed a website for a hair salon that features an online booking system and a gallery of their styling work. Focused on making it easy for clients to schedule appointments and view available services.",
+      url: "https://www.studio-24.ca/",
+    },
+    {
+      src: "/animalshepherd-homepage.webp",
+      altText: "Animal Sanctuary",
+      title: "Animal Sanctuary",
+      description:
+        "Built a website for an animal sanctuary that includes adoption application forms and donation processing. Focused on organized navigation so users can find sanctuary information and ways to help.",
+      url: "https://www.animalshepherd.org/en",
+    },
+    {
+      src: "/katieshevlin-homepage.webp",
       altText: "Content Services Portfolio",
       title: "Content Services Portfolio",
       description:
@@ -9,7 +27,7 @@ export default function Portfolio() {
       url: "https://www.katieshevlin.com/",
     },
     {
-      imgSrc: "https://www.neilnevitt.com/homepage-image.webp",
+      src: "/neilnevitt-homepage.webp",
       altText: "Healthcare Business",
       title: "Healthcare Business",
       description:
@@ -17,9 +35,10 @@ export default function Portfolio() {
       url: "https://www.neilnevitt.com/",
     },
   ];
+
   return (
     <section
-      className="pt-4 sm:pt-8 pb-20 relative bg-transparent flex-grow"
+      className="pt-4 sm:pt-8 pb-20 relative bg-transparent grow"
       style={{
         paddingTop: "clamp(8rem, 10vw, 8rem)",
         minHeight: "calc(100vh - clamp(4rem, 10vw, 8rem))",
@@ -33,25 +52,28 @@ export default function Portfolio() {
             </h2>
             <p className="font-normal text-base text-zinc-900 dark:text-zinc-100 max-w-3xl text-center">
               Whatever your end goal, make it happen with a modern, professional
-              website. Here’s some examples of my recent work:
+              website. Here&apos;s some examples of my recent work:
             </p>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8">
           {portfolioData.map(
-            ({ imgSrc, altText, title, description, url }, id) => (
+            ({ src, altText, title, description, url }, id) => (
               <div
                 key={id}
-                className="relative md:w-[calc(50%-1rem)] lg:w-[calc(50%-2rem)] overflow-hidden rounded-xl group focus-within:ring"
+                className="relative overflow-hidden group focus-within:ring"
                 tabIndex={0}
               >
-                <img
-                  src={imgSrc}
-                  alt={altText}
-                  className="h-80 w-full object-cover transition-all duration-700 group-hover:scale-110 group-focus-within:scale-110 group-active:scale-110"
-                />
+                <div className="w-80 h-80">
+                  <Image
+                    src={src}
+                    alt={altText}
+                    fill
+                    className="object-cover transition-all duration-700 group-hover:scale-110 group-focus-within:scale-110 group-active:scale-110"
+                  />
+                </div>
 
-                <div className="absolute bottom-0 left-0 z-10 py-7 px-6 flex justify-between flex-col transition-all duration-500 transform translate-y-full group-hover:translate-y-0 group-focus-within:translate-y-0 group-active:translate-y-0 group-hover:w-full group-hover:h-full group-hover:bg-black/50 group-focus-within:w-full group-focus-within:h-full group-focus-within:bg-black/50 group-active:w-full group-active:h-full group-active:bg-black/50 rounded-xl pointer-events-none group-focus-within:pointer-events-auto group-active:pointer-events-auto">
+                <div className="absolute bottom-0 left-0 z-10 py-7 px-6 flex justify-between flex-col transition-all duration-500 transform translate-y-full group-hover:translate-y-0 group-focus-within:translate-y-0 group-active:translate-y-0 group-hover:w-full group-hover:h-full group-hover:bg-black/80 group-focus-within:w-full group-focus-within:h-full group-focus-within:bg-black/50 group-active:w-full group-active:h-full group-active:bg-black/50 pointer-events-none group-focus-within:pointer-events-auto group-active:pointer-events-auto">
                   <div className="block">
                     <h6 className="text-xl font-bold leading-8 text-white mb-5">
                       {title}
@@ -66,7 +88,7 @@ export default function Portfolio() {
                     rel="noopener noreferrer"
                     className="cursor-pointer group flex items-center gap-2 text-base font-semibold text-white transition-all duration-500 pointer-events-auto"
                   >
-                    View Portfolio
+                    View Website
                     <svg
                       className="transition-all duration-500 group-hover:translate-x-1 group-focus-within:translate-x-1 group-active:translate-x-1"
                       width="18"

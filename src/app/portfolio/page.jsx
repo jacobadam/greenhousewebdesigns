@@ -3,14 +3,6 @@ import Image from "next/image";
 export default function Portfolio() {
   const portfolioData = [
     {
-      src: "/studio24-homepage.webp",
-      altText: "Hair Salon Business",
-      title: "Hair Salon Business",
-      description:
-        "Developed a website for a hair salon that features an online booking system and a gallery of their styling work. Focused on making it easy for clients to schedule appointments and view available services.",
-      url: "https://www.studio-24.ca/",
-    },
-    {
       src: "/animalshepherd-homepage.webp",
       altText: "Animal Sanctuary",
       title: "Animal Sanctuary",
@@ -27,9 +19,17 @@ export default function Portfolio() {
       url: "https://www.katieshevlin.com/",
     },
     {
+      src: "/studio24-homepage.webp",
+      altText: "Hair Salon",
+      title: "Hair Salon",
+      description:
+        "Developed a website for a hair salon that features an online booking system and a gallery of their styling work. Focused on making it easy for clients to schedule appointments and view available services.",
+      url: "https://www.studio-24.ca/",
+    },
+    {
       src: "/neilnevitt-homepage.webp",
-      altText: "Healthcare Business",
-      title: "Healthcare Business",
+      altText: "Healthcare",
+      title: "Healthcare",
       description:
         "Designed and built a modern website for a healthcare provider, ensuring responsive design for all devices. Focused on user-friendly navigation and improving online visibility.",
       url: "https://www.neilnevitt.com/",
@@ -108,7 +108,7 @@ export default function Portfolio() {
                   </a>
                 </div>
               </div>
-            )
+            ),
           )}
         </div>
       </div>

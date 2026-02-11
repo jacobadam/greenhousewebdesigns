@@ -61,7 +61,7 @@ export default function Portfolio() {
             ({ src, altText, title, description, url }, id) => (
               <div
                 key={id}
-                className="relative overflow-hidden group focus-within:ring"
+                className="relative overflow-hidden group rounded-xl"
                 tabIndex={0}
               >
                 <div className="w-80 h-80">
@@ -73,7 +73,7 @@ export default function Portfolio() {
                   />
                 </div>
 
-                <div className="absolute bottom-0 left-0 z-10 py-7 px-6 flex justify-between flex-col transition-all duration-500 transform translate-y-full group-hover:translate-y-0 group-focus-within:translate-y-0 group-active:translate-y-0 group-hover:w-full group-hover:h-full group-hover:bg-black/80 group-focus-within:w-full group-focus-within:h-full group-focus-within:bg-black/50 group-active:w-full group-active:h-full group-active:bg-black/50 pointer-events-none group-focus-within:pointer-events-auto group-active:pointer-events-auto">
+                <div className="absolute bottom-0 left-0 z-10 py-7 px-6 flex justify-between flex-col transition-all duration-500 transform translate-y-full group-hover:translate-y-0 group-focus-within:translate-y-0 group-active:translate-y-0 group-hover:w-full group-hover:h-full group-hover:bg-black/80 group-focus-within:w-full group-focus-within:h-full group-focus-within:bg-black/90 group-active:w-full group-active:h-full group-active:bg-black/50 pointer-events-none group-focus-within:pointer-events-auto group-active:pointer-events-auto rounded">
                   <div className="block">
                     <h6 className="text-xl font-bold leading-8 text-white mb-5">
                       {title}

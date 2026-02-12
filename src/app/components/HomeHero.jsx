@@ -72,7 +72,7 @@ export default function HomepageHero() {
             alt="A graphic of a laptop and a mobile device"
             width="500"
             height="287"
-            priority
+            fetchPriority="high"
           />
           <Image
             src="hero-image-dark.svg"
@@ -80,7 +80,7 @@ export default function HomepageHero() {
             alt="A graphic of a laptop and a mobile device"
             width="500"
             height="287"
-            priority
+            fetchPriority="high"
           />
         </div>
       </div>

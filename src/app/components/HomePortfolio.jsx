@@ -156,7 +156,7 @@ export default function HomePortfolio() {
             aria-label="Go to portfolio"
             className="flex justify-center items-center relative h-12.5 w-40 overflow-hidden border dark:border-darkmode border-lightmode dark:hover:border-darkmode bg-transparent px-3 dark:text-darkmode text-lightmode dark:hover:text-white hover:shadow-2xl before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-lightmode dark:before:bg-darkmode before:transition-all before:duration-300 hover:text-white hover:shadow-lightmode dark:hover:shadow-darkmode hover:before:left-0 hover:before:w-full rounded-full font-semibold mt-4"
           >
-            <span className="relative z-3">View all projects</span>
+            <span className="relative z-3">View All Projects</span>
           </a>
         </div>
       </div>

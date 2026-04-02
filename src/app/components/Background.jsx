@@ -27,7 +27,7 @@ const BGGrid = () => {
       }}
       className="absolute bottom-0 left-0 right-0 top-0"
     >
-      <div className="absolute inset-0 bg-gradient-to-b from-zinc-200/80 via-zinc-200/0 to-zinc-200/80 dark:bg-gradient-to-b dark:from-zinc-950/80 dark:via-zinc-950/0 dark:to-zinc-950/80" />
+      <div className="absolute inset-0 bg-linear-to-b from-zinc-200/80 via-zinc-200/0 to-zinc-200/80 dark:bg-linear-to-b dark:from-zinc-950/80 dark:via-zinc-950/0 dark:to-zinc-950/80" />
       <Beams />
     </div>
   );

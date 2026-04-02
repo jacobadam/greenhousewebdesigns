@@ -136,7 +136,7 @@ const Beams = () => {
           top,
           left,
         }}
-        className="absolute h-[64px] w-[1px] bg-gradient-to-b from-lightmode/0 to-lightmode dark:from-darkmode/0 dark:to-darkmode"
+        className="absolute h-16 w-px bg-linear-to-b from-lightmode/0 to-lightmode dark:from-darkmode/0 dark:to-darkmode"
       />
     );
   };

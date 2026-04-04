@@ -9,7 +9,7 @@ export default function HomepageHero() {
   const words = text.split(" ");
 
   return (
-    <section className="w-full min-h-screen flex items-center bg-transparent pt-28 lg:pt-0">
+    <section className="w-full min-h-screen flex items-center bg-transparent pt-28 lg:pt-8">
       <div className="w-full max-w-7xl mx-auto px-4 py-12 lg:py-40 md:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div className="w-full text-center lg:text-left">

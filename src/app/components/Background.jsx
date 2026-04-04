@@ -6,7 +6,7 @@ import { useTheme } from "next-themes";
 
 export default function Background() {
   return (
-    <div className="fixed top-0 left-0 w-full h-full overflow-hidden bg-zinc-100 dark:bg-zinc-950 z-0">
+    <div className="fixed top-0 left-0 w-full h-full overflow-hidden bg-background dark:bg-zinc-950 z-0">
       <BGGrid />
     </div>
   );
@@ -17,7 +17,7 @@ const BGGrid = () => {
 
   const isDarkMode = resolvedTheme === "dark";
 
-  const lightModeGrid = `url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke-width='1' stroke='rgba(0, 0, 0, 0.03)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e")`;
+  const lightModeGrid = `url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke-width='1' stroke='rgba(15, 23, 42, 0.06)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e")`;
   const darkModeGrid = `url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke-width='2' stroke='rgb(30 27 75 / 0.5)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e")`;
 
   return (
@@ -25,9 +25,9 @@ const BGGrid = () => {
       style={{
         backgroundImage: isDarkMode ? darkModeGrid : lightModeGrid,
       }}
-      className="absolute bottom-0 left-0 right-0 top-0"
+      className="absolute inset-0"
     >
-      <div className="absolute inset-0 bg-linear-to-b from-zinc-200/80 via-zinc-200/0 to-zinc-200/80 dark:bg-linear-to-b dark:from-zinc-950/80 dark:via-zinc-950/0 dark:to-zinc-950/80" />
+      <div className="absolute inset-0 bg-linear-to-b from-white/80 via-white/0 to-white/80 dark:bg-linear-to-b dark:from-zinc-950/80 dark:via-zinc-950/0 dark:to-zinc-950/80" />
       <Beams />
     </div>
   );

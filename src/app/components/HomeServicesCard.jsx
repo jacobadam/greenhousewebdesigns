@@ -38,17 +38,17 @@ export default function HomeServicesCard() {
   return (
     <div className="max-w-7xl mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-2 py-10">
-        {services.map((service, index) => (
-          <div
-            key={index}
-            className="relative group block p-2 h-full w-full"
-            onMouseEnter={() => setHoveredIndex(index)}
-            onMouseLeave={() => setHoveredIndex(null)}
-          >
-            <AnimatePresence>
+        <AnimatePresence>
+          {services.map((service, index) => (
+            <div
+              key={index}
+              className="relative group block p-2 h-full w-full"
+              onMouseEnter={() => setHoveredIndex(index)}
+              onMouseLeave={() => setHoveredIndex(null)}
+            >
               {hoveredIndex === index && (
                 <motion.span
-                  className="absolute inset-0 h-full w-full bg-zinc-300 dark:bg-slate-800/[0.8] block rounded-3xl"
+                  className="absolute inset-0 h-full w-full bg-zinc-300 dark:bg-slate-800/80 block rounded-3xl"
                   layoutId="hoverBackground"
                   initial={{ opacity: 0 }}
                   animate={{
@@ -61,32 +61,32 @@ export default function HomeServicesCard() {
                   }}
                 />
               )}
-            </AnimatePresence>
-            <div className="rounded-2xl h-full w-full p-2 overflow-hidden bg-gradient-to-br from-zinc-100 to-zinc-300/20 dark:from-slate-800 dark:to-slate-800/20 border border-transparent dark:group-hover:border-slate-700 relative z-50">
-              <div className="relative z-50">
-                <div className="p-4 text-center lg:text-left">
-                  <div className="inline-block rounded-lg p-2">
-                    <img
-                      className="w-11 h-11 object-contain bg-white p-1 rounded"
-                      key={index}
-                      src={service.svgPath}
-                      alt={service.alt}
-                      aria-hidden="true"
-                      width="32"
-                      height="32"
-                    />
+              <div className="rounded-2xl h-full w-full p-2 overflow-hidden bg-linear-to-br from-zinc-200 to-zinc-300/20 dark:from-slate-800 dark:to-slate-800/20 border border-transparent dark:group-hover:border-slate-700 relative z-50">
+                <div className="relative z-50">
+                  <div className="p-4 text-center lg:text-left">
+                    <div className="inline-block rounded-lg p-2">
+                      <img
+                        className="w-11 h-11 object-contain bg-white p-1 rounded"
+                        key={index}
+                        src={service.svgPath}
+                        alt={service.alt}
+                        aria-hidden="true"
+                        width="32"
+                        height="32"
+                      />
+                    </div>
+                    <h2 className="text-lightmode dark:text-darkmode font-bold tracking-wide mt-4 text-lg">
+                      {service.title}
+                    </h2>
+                    <p className="mt-2 text-zinc-800 dark:text-zinc-200 tracking-wide leading-relaxed text-base">
+                      {service.description}
+                    </p>
                   </div>
-                  <h2 className="text-lightmode dark:text-darkmode font-bold tracking-wide mt-4 text-lg">
-                    {service.title}
-                  </h2>
-                  <p className="mt-2 text-zinc-800 dark:text-zinc-200 tracking-wide leading-relaxed text-base">
-                    {service.description}
-                  </p>
                 </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </AnimatePresence>
       </div>
     </div>
   );

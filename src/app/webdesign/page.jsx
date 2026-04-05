@@ -34,37 +34,30 @@ export default function WebDesign() {
   ];
 
   return (
-    <>
-      <div className="relative bg-transparent h-fit">
-        <div className="relative mx-auto grid h-full w-full max-w-7xl grid-cols-1 gap-0 md:gap-8 lg:gap-12 px-4 md:grid-cols-2 md:mb-8">
-          <div
-            className="flex h-fit w-full flex-col justify-center py-12 md:sticky md:top-0 text-center md:max-h-screen"
-            style={{
-              paddingTop: "clamp(8rem, 10vw, 8rem)",
-            }}
-          >
-            <h1 className="mb-4 lg:mt-8 text-lg sm:text-2xl lg:text-3xl font-semibold leading-tight text-black dark:text-white text-center">
-              What Is Web Design And What Are The Benefits?
-            </h1>
-            <p className="text-base sm:text-lg text-zinc-900 dark:text-zinc-100 text-center md:mb-4">
-              Your website is a critical engine for growth. More than just
-              making websites look good, web design is about strategically
-              planning and building online experiences that are user-friendly,
-              engaging, and achieve specific goals.
-            </p>
-            <Image
-              src="/webdesign.webp"
-              alt="web design"
-              className="rounded-2xl mt-4 w-[768px] h-[320px] object-cover"
-              width={768}
-              height={200}
-              priority
-            ></Image>
-          </div>
-          <BenefitsCarousel benefits={benefitsOfWebDesign} />
+    <section className="relative bg-transparent h-fit">
+      <div className="relative mx-auto grid h-full w-full max-w-7xl grid-cols-1 gap-0 md:gap-8 lg:gap-12 px-4 md:grid-cols-2 md:mb-8">
+        <div className="flex h-fit w-full flex-col justify-center md:sticky md:top-0 text-center md:max-h-screen pt-36 mb-8 lg:mb-0">
+          <h1 className="mb-4 text-3xl md:text-4xl xl:text-5xl font-semibold leading-tight text-black dark:text-white text-center">
+            What Is Web Design And What Are The Benefits?
+          </h1>
+          <p className="text-base sm:text-lg text-zinc-900 dark:text-zinc-100 text-center md:mb-4">
+            Your website is a critical engine for growth. More than just making
+            websites look good, web design is about strategically planning and
+            building online experiences that are user-friendly, engaging, and
+            achieve specific goals.
+          </p>
+          <Image
+            src="/webdesign.webp"
+            alt="web design"
+            className="rounded mt-4 w-3xl h-80 object-cover"
+            width={768}
+            height={200}
+            priority
+          ></Image>
         </div>
+        <BenefitsCarousel benefits={benefitsOfWebDesign} />
       </div>
-    </>
+    </section>
   );
 }
 
@@ -117,7 +110,7 @@ const BenefitItem = ({
         opacity,
         scale,
       }}
-      className="grid h-full py-16 px-4 w-full shrink-0 rounded-2xl border border-black dark:border-white bg-zinc-100/50 dark:bg-zinc-950/30"
+      className="grid h-full py-16 px-4 w-full shrink-0 rounded border border-black dark:border-white bg-zinc-100/50 dark:bg-zinc-950/30"
     >
       <div className="flex flex-col items-center justify-center text-center">
         <span className="text-xl lg:text-2xl font-semibold text-[#71b468] dark:text-darkmode mb-6">

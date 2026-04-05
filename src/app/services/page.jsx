@@ -10,10 +10,9 @@ export default function Services() {
               Services
             </h2>
             <p className="font-normal text-lg text-zinc-900 dark:text-zinc-100 max-w-3xl text-center">
-              Whether you need a simple refresh or a custom-built website, I
-              provide a personalized approach that takes into account the needs
-              of your business. My streamlined process allows you to focus on
-              what matters while I bring your vision to life online.
+              Whether you need a refresh or a custom-built website, I take a
+              personalized approach tailored to your business, handling the
+              process so you can stay focused while I bring your vision online.
             </p>
           </div>
           <div className="mt-6 grid grid-cols-1 gap-6 lg:mt-12 lg:grid-cols-3 lg:gap-8">

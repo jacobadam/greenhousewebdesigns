@@ -42,7 +42,7 @@ export default function HomePortfolio() {
               </div>
               <button
                 aria-label="Visit Animal Sanctuary site"
-                className="border border-lightmode dark:border-darkmode py-2 px-4 rounded-full transition-all duration-300 group-hover:bg-lightmode dark:group-hover:bg-darkmode cursor-pointer"
+                className="border border-lightmode dark:border-darkmode py-2 px-4 rounded transition-all duration-300 group-hover:bg-lightmode dark:group-hover:bg-darkmode cursor-pointer"
               >
                 <svg
                   className="stroke-lightmode dark:stroke-darkmode transition-all duration-300 group-hover:stroke-white"
@@ -89,7 +89,7 @@ export default function HomePortfolio() {
               </div>
               <button
                 aria-label="Visit Content Services Portfolio site"
-                className="border border-lightmode dark:border-darkmode py-2 px-4 rounded-full transition-all duration-300 group-hover:bg-lightmode dark:group-hover:bg-darkmode cursor-pointer"
+                className="border border-lightmode dark:border-darkmode py-2 px-4 rounded transition-all duration-300 group-hover:bg-lightmode dark:group-hover:bg-darkmode cursor-pointer"
               >
                 <svg
                   className="stroke-lightmode dark:stroke-darkmode transition-all duration-300 group-hover:stroke-white"
@@ -136,7 +136,7 @@ export default function HomePortfolio() {
               </div>
               <button
                 aria-label="Visit Hair Salon site"
-                className="border border-lightmode dark:border-darkmode py-2 px-4 rounded-full transition-all duration-300 group-hover:bg-lightmode dark:group-hover:bg-darkmode cursor-pointer"
+                className="border border-lightmode dark:border-darkmode py-2 px-4 rounded transition-all duration-300 group-hover:bg-lightmode dark:group-hover:bg-darkmode cursor-pointer"
               >
                 <svg
                   className="stroke-lightmode dark:stroke-darkmode transition-all duration-300 group-hover:stroke-white"

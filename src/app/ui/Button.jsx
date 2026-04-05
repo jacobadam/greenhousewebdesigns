@@ -7,7 +7,7 @@ export default function Button({
   ...props
 }) {
   const base =
-    "inline-flex items-center justify-center h-11 px-5 text-sm font-semibold transition-colors duration-200 rounded-lg";
+    "inline-flex items-center justify-center h-11 px-5 text-sm font-semibold transition-colors duration-200 rounded";
 
   const variants = {
     primary:

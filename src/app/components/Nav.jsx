@@ -42,7 +42,7 @@ export default function NavBar() {
       className={`bg-black fixed top-0 z-20 overflow-hidden border-white/10 bg-linear-to-br from-white/20 to-white/5 backdrop-blur px-2 sm:px-4 transition-all duration-300 w-auto ${
         isScrolled
           ? "left-0 right-0"
-          : "mx-auto left-6 right-6 top-6 rounded-2xl"
+          : "mx-auto left-6 right-6 top-6 rounded-xl"
       }`}
     >
       <div className="flex items-center justify-between">

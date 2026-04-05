@@ -48,7 +48,7 @@ export default function HomeServicesCard() {
             >
               {hoveredIndex === index && (
                 <motion.span
-                  className="absolute inset-0 h-full w-full bg-zinc-300 dark:bg-slate-800/80 block rounded-3xl"
+                  className="absolute inset-0 h-full w-full bg-zinc-300 dark:bg-slate-800/80 block rounded"
                   layoutId="hoverBackground"
                   initial={{ opacity: 0 }}
                   animate={{
@@ -61,10 +61,10 @@ export default function HomeServicesCard() {
                   }}
                 />
               )}
-              <div className="rounded-2xl h-full w-full p-2 overflow-hidden bg-linear-to-br from-zinc-200 to-zinc-300/20 dark:from-slate-800 dark:to-slate-800/20 border border-transparent dark:group-hover:border-slate-700 relative z-50">
+              <div className="rounded h-full w-full p-2 overflow-hidden bg-linear-to-br from-zinc-200 to-zinc-300/20 dark:from-slate-800 dark:to-slate-800/20 relative z-50">
                 <div className="relative z-50">
                   <div className="p-4 text-center lg:text-left">
-                    <div className="inline-block rounded-lg p-2">
+                    <div className="inline-block rounded p-2">
                       <img
                         className="w-11 h-11 object-contain bg-white p-1 rounded"
                         key={index}

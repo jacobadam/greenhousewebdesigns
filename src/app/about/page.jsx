@@ -12,8 +12,8 @@ export default function About() {
               About Us
             </h1>
             <p className="max-w-xl text-center text-zinc-900 dark:text-zinc-100 text-lg font-normal leading-relaxed">
-              At Greenhouse Web Designs, we're passionate about building custom
-              websites that help small businesses thrive online.
+              At Greenhouse Web Designs, we&apos;re passionate about building
+              custom websites that help small businesses thrive online.
             </p>
           </div>
           <div className="justify-start items-center lg:gap-12 gap-10 grid lg:grid-cols-2 grid-cols-1">
@@ -28,31 +28,34 @@ export default function About() {
             <div className="flex-col justify-center lg:items-start items-center gap-10 lg:gap-0 inline-flex">
               <div className="flex-col justify-center items-start gap-3 flex mb-8">
                 <p className="text-zinc-800 dark:text-zinc-200 text-base font-normal leading-relaxed lg:text-start text-center">
-                  I'm Jacob, founder of Greenhouse Web Designs — a small studio
-                  with a big mission: helping businesses grow with high-quality,
-                  bespoke websites.
+                  I&apos;m Jacob, founder of Greenhouse Web Designs — a small
+                  studio with a big mission: helping businesses grow with
+                  high-quality, bespoke websites.
                 </p>
                 <p className="text-zinc-800 dark:text-zinc-200 text-base font-normal leading-relaxed lg:text-start text-center">
-                  I began my career at SpareRoom, the UK’s largest property
-                  rental platform, before moving to Article, one of Canada’s top
-                  eCommerce brands. Along the way, I’ve gained a strong
-                  foundation in scalable, user-focused web development — and I
-                  now bring that experience directly to small business owners
-                  who want more than a cookie-cutter solution.
+                  I began my career at SpareRoom, the UK&apos;s largest property
+                  rental platform, before moving to Article, one of
+                  Canada&apos;s top eCommerce brands. Along the way, I&apos;ve
+                  gained a strong foundation in scalable, user-focused web
+                  development — and I now bring that experience directly to
+                  small business owners who want more than a cookie-cutter
+                  solution.
                 </p>
                 <p className="text-zinc-800 dark:text-zinc-200 text-base font-normal leading-relaxed lg:text-start text-center">
                   At Greenhouse, I focus on creating websites that reflect your
-                  goals and vision. Whether you're just getting started or
-                  looking to refresh your online presence, I’ll work closely
-                  with you to develop a site that feels like an extension of
-                  your brand — and helps convert visitors into loyal customers.
+                  goals and vision. Whether you&apos;re just getting started or
+                  looking to refresh your online presence, I&apos;ll work
+                  closely with you to develop a site that feels like an
+                  extension of your brand — and helps convert visitors into
+                  loyal customers.
                 </p>
                 <p className="text-zinc-800 dark:text-zinc-200 text-base font-normal leading-relaxed lg:text-start text-center">
-                  If you’re ready to grow your digital presence with a website
-                  that works as hard as you do, I’d love to hear from you.
+                  If you&apos;re ready to grow your digital presence with a
+                  website that works as hard as you do, I&apos;d love to hear
+                  from you.
                 </p>
               </div>
-              <Button href="/contact">Let's Talk</Button>
+              <Button href="/contact">Let&apos;s Talk</Button>
             </div>
           </div>
         </div>

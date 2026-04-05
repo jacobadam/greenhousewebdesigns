@@ -37,20 +37,14 @@ export default function Portfolio() {
   ];
 
   return (
-    <section
-      className="pt-4 sm:pt-8 pb-20 relative bg-transparent grow"
-      style={{
-        paddingTop: "clamp(8rem, 10vw, 8rem)",
-        minHeight: "calc(100vh - clamp(4rem, 10vw, 8rem))",
-      }}
-    >
-      <div className="w-full max-w-7xl px-6 lg:px-8 mx-auto">
+    <section className="pt-28 lg:pt-4 pb-20 relative bg-transparent grow">
+      <div className="w-full max-w-7xl px-6 lg:px-8 mx-auto py-12 lg:py-24">
         <div className="mb-8 text-center">
           <div className="flex items-center justify-between gap-5 flex-col mb-14">
-            <h2 className="text-black dark:text-white text-2xl lg:text-3xl font-semibold leading-snug">
+            <h2 className="text-black dark:text-white text-3xl md:text-4xl xl:text-5xl font-semibold leading-snug">
               Portfolio
             </h2>
-            <p className="font-normal text-base text-zinc-900 dark:text-zinc-100 max-w-3xl text-center">
+            <p className="font-normal text-lg text-zinc-900 dark:text-zinc-100 max-w-3xl text-center">
               Whatever your end goal, make it happen with a modern, professional
               website. Here&apos;s some examples of my recent work:
             </p>
@@ -61,7 +55,7 @@ export default function Portfolio() {
             ({ src, altText, title, description, url }, id) => (
               <div
                 key={id}
-                className="relative overflow-hidden group rounded-xl"
+                className="relative overflow-hidden group rounded"
                 tabIndex={0}
               >
                 <div className="w-80 h-80">

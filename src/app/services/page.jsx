@@ -2,20 +2,14 @@ import { FiCheckCircle, FiXSquare } from "react-icons/fi";
 
 export default function Services() {
   return (
-    <section
-      className="pt-4 sm:pt-8 pb-20 relative bg-transparent flex-grow"
-      style={{
-        paddingTop: "clamp(8rem, 10vw, 8rem)",
-        minHeight: "calc(100vh - clamp(4rem, 10vw, 8rem))",
-      }}
-    >
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section className="pt-28 lg:pt-4 pb-20 relative bg-transparent grow">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 lg:py-24">
         <div className="mb-4 lg:mb-8 text-center">
           <div className="flex items-center justify-between gap-5 flex-col mb-14">
-            <h2 className="text-zinc-800 dark:text-zinc-200 text-2xl lg:text-3xl font-semibold leading-snug">
+            <h2 className="text-zinc-800 dark:text-zinc-200 text-3xl md:text-4xl xl:text-5xl font-semibold leading-snug">
               Services
             </h2>
-            <p className="font-normal text-base text-zinc-900 dark:text-zinc-100 max-w-3xl text-center">
+            <p className="font-normal text-lg text-zinc-900 dark:text-zinc-100 max-w-3xl text-center">
               Whether you need a simple refresh or a custom-built website, I
               provide a personalized approach that takes into account the needs
               of your business. My streamlined process allows you to focus on
@@ -79,7 +73,7 @@ export default function Services() {
                   checked: false,
                 },
                 {
-                  children: "24/7 Support",
+                  children: "Ongoing Support",
                   checked: false,
                 },
                 {
@@ -114,7 +108,7 @@ export default function Services() {
                   checked: true,
                 },
                 {
-                  children: "24/7 Support",
+                  children: "Ongoing Support",
                   checked: true,
                 },
                 {

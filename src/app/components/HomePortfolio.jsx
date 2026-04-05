@@ -1,12 +1,19 @@
 import Image from "next/image";
+import Button from "../ui/Button";
 
 export default function HomePortfolio() {
   return (
-    <section className="w-full h-full py-40 lg:py-24 relative bg-zinc-200 dark:bg-zinc-950">
+    <section className="w-full h-full py-40 lg:py-28 relative bg-background dark:bg-zinc-950">
       <div className="w-full max-w-2xl md:max-w-7xl px-6 lg:px-8 mx-auto">
-        <h1 className="text-2xl xl:text-3xl font-bold text-black dark:text-white mb-16 text-center lg:text-left">
-          Professional Project Achievements
-        </h1>
+        <div className="mb-14 text-center">
+          <h1 className="text-3xl md:text-4xl xl:text-5xl font-bold text-center text-black dark:text-white leading-13 mb-5 max-w-full lg:max-w-3xl lg:mx-auto">
+            Recent Projects
+          </h1>
+          <p className="text-zinc-900 dark:text-zinc-100 lg:max-w-3xl lg:mx-auto text-lg md:text-xl">
+            A selection of recent work focused on performance, usability, and
+            conversion.
+          </p>
+        </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           <a
@@ -151,13 +158,7 @@ export default function HomePortfolio() {
           </a>
         </div>
         <div className="flex items-center justify-center mt-8 lg:mt-4">
-          <a
-            href="/portfolio"
-            aria-label="Go to portfolio"
-            className="flex justify-center items-center relative h-12.5 w-40 overflow-hidden border dark:border-darkmode border-lightmode dark:hover:border-darkmode bg-transparent px-3 dark:text-darkmode text-lightmode dark:hover:text-white hover:shadow-2xl before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-lightmode dark:before:bg-darkmode before:transition-all before:duration-300 hover:text-white hover:shadow-lightmode dark:hover:shadow-darkmode hover:before:left-0 hover:before:w-full rounded-full font-semibold mt-4"
-          >
-            <span className="relative z-3">View All Projects</span>
-          </a>
+          <Button href="/services">View all</Button>
         </div>
       </div>
     </section>

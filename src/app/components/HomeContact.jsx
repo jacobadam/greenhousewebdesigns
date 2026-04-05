@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import Button from "../ui/Button";
 
 export default function HomeContact() {
   const form = useRef();
@@ -36,9 +37,15 @@ export default function HomeContact() {
 
   return (
     <div className="h-full w-full flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 bg-transparent py-24 lg:py-4">
-      <h1 className="text-2xl xl:text-3xl font-bold text-center pt-8 text-black dark:text-white">
-        Contact
-      </h1>
+      <div className="mb-14 text-center">
+        <h1 className="text-3xl md:text-4xl xl:text-5xl font-bold text-center text-black dark:text-white leading-13 mb-5 max-w-full lg:max-w-3xl lg:mx-auto">
+          Contact
+        </h1>
+        <p className="text-zinc-900 dark:text-zinc-100 lg:max-w-3xl lg:mx-auto text-lg md:text-xl">
+          Have a project in mind or need help with your website? Get in touch
+          and I’ll get back to you shortly.
+        </p>
+      </div>
 
       {messageSent && (
         <p
@@ -86,7 +93,7 @@ export default function HomeContact() {
             name="name"
             required
             aria-required="true"
-            className="block w-full h-11 px-5 py-2.5 leading-7 text-base font-normal shadow-xs text-zinc-900 border border-gray-300 bg-white dark:bg-zinc-200 rounded-full placeholder-gray-400 focus:ring-2 focus:ring-lightmode dark:focus:ring-darkmode outline-none"
+            className="block w-full h-11 px-5 py-2.5 leading-7 text-base font-normal shadow-xs text-zinc-900 border border-gray-300 bg-white dark:bg-zinc-200 rounded placeholder-gray-400 focus:ring-2 focus:ring-lightmode dark:focus:ring-darkmode outline-none"
           />
         </div>
 
@@ -117,7 +124,7 @@ export default function HomeContact() {
             name="email"
             required
             aria-required="true"
-            className="block w-full h-11 px-5 py-2.5 leading-7 text-base font-normal shadow-xs text-zinc-900 border border-gray-300 bg-white rounded-full placeholder-gray-400 focus:ring-2 focus:ring-lightmode dark:focus:ring-darkmode outline-none"
+            className="block w-full h-11 px-5 py-2.5 leading-7 text-base font-normal shadow-xs text-zinc-900 border border-gray-300 bg-white rounded placeholder-gray-400 focus:ring-2 focus:ring-lightmode dark:focus:ring-darkmode outline-none"
           />
         </div>
 
@@ -143,7 +150,7 @@ export default function HomeContact() {
             </svg>
           </label>
           <textarea
-            className="block w-full h-40 px-4 py-2.5 text-base leading-7 font-normal shadow-xs text-zinc-900 border border-gray-300 bg-white rounded-2xl placeholder-gray-400 focus:ring-2 focus:ring-lightmode dark:focus:ring-darkmode outline-none resize-none"
+            className="block w-full h-40 px-4 py-2.5 text-base leading-7 font-normal shadow-xs text-zinc-900 border border-gray-300 bg-white rounded placeholder-gray-400 focus:ring-2 focus:ring-lightmode dark:focus:ring-darkmode outline-none resize-none"
             name="message"
             id="message"
             required
@@ -151,13 +158,9 @@ export default function HomeContact() {
           />
         </div>
 
-        <button
-          type="submit"
-          title="Submit your message"
-          className="flex justify-center items-center relative h-[50px] w-40 overflow-hidden border border-lightmode dark:border-darkmode bg-lightmode dark:bg-darkmode px-3 text-zinc-100 dark:text-black dark:hover:text-white hover:shadow-2xl before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-lightmode dark:before:bg-darkmode before:transition-all before:duration-500 hover:text-white hover:shadow-lightmode dark:hover:shadow-darkmode hover:before:left-0 hover:before:w-full rounded-full font-semibold mt-4"
-        >
-          <span className="relative z-3">Submit</span>
-        </button>
+        <div className="mt-8 lg:mt-4">
+          <Button href="/services">Submit</Button>
+        </div>
       </form>
     </div>
   );

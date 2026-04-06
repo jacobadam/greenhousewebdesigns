@@ -50,7 +50,7 @@ export default function Portfolio() {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8 p-6 md:p-8 bg-zinc-100 dark:bg-zinc-950">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8 md:p-8 bg-zinc-100 dark:bg-zinc-950">
           {portfolioData.map(
             ({ src, altText, title, description, url }, id) => (
               <div

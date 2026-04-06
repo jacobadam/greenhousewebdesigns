@@ -4,12 +4,20 @@ import React, { useRef, useState } from "react";
 import FormButton from "../ui/FormButton";
 
 export default function Contact() {
-  const form = useRef();
+  const form = useRef(null);
+
   const [messageSent, setMessageSent] = useState(false);
-  const [errorMessage, setErrorMessage] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const sendMessage = async (e) => {
     e.preventDefault();
+
+    if (!form.current) return;
+
+    setIsSubmitting(true);
+    setErrorMessage("");
+    setMessageSent(false);
 
     const formData = new FormData(form.current);
     formData.append("access_key", "c1eb05ac-6ab1-4a50-a826-9ddce24dca20");
@@ -23,16 +31,18 @@ export default function Contact() {
       const data = await res.json();
 
       if (data.success) {
-        setMessageSent(true);
-        setErrorMessage(false);
         form.current.reset();
+        setMessageSent(true);
+        setErrorMessage("");
+
         setTimeout(() => setMessageSent(false), 5000);
       } else {
         setErrorMessage("Something went wrong. Please try again.");
       }
-    } catch (error) {
-      console.error("Error:", error);
+    } catch {
       setErrorMessage("Something went wrong. Please try again.");
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -47,6 +57,7 @@ export default function Contact() {
             <p className="text-zinc-900 dark:text-zinc-100 text-base font-normal pb-6">
               Get in touch and let&apos;s discuss how I can serve your business.
             </p>
+
             <div className="py-6 border-t border-gray-400 dark:border-zinc-200 text-center">
               <div className="flex flex-col items-center">
                 <div className="rounded-lg p-3">
@@ -56,11 +67,11 @@ export default function Contact() {
                     className="w-6 h-6 object-contain dark:invert"
                   />
                 </div>
-
                 <p className="text-zinc-800 dark:text-zinc-200 text-xs font-normal">
                   greenhousewebdesigns@gmail.com
                 </p>
               </div>
+
               <div className="flex flex-col items-center mt-8">
                 <div className="rounded-lg p-3">
                   <img
@@ -69,7 +80,6 @@ export default function Contact() {
                     className="w-6 h-6 object-contain dark:invert"
                   />
                 </div>
-
                 <p className="text-zinc-800 dark:text-zinc-200 text-xs font-normal">
                   (+1) 672-888-0185
                 </p>
@@ -79,120 +89,74 @@ export default function Contact() {
 
           <div className="px-4 rounded-lg">
             {messageSent && (
-              <p
-                className="text-center text-lightmode dark:text-indigo-600 text-xl font-bold"
+              <div
+                className="mb-6 flex items-center gap-3 rounded-lg border border-lightmode/30 bg-lightmode/10 px-4 py-3 text-lightmode dark:border-darkmode/30 dark:bg-darkmode/10 dark:text-darkmode"
                 aria-live="polite"
               >
-                Message sent!
-              </p>
-            )}
-            {errorMessage && (
-              <p
-                className="text-center text-red-600 text-xl font-bold py-4"
-                aria-live="assertive"
-                role="alert"
-              >
-                {errorMessage}
-              </p>
-            )}
-
-            <form
-              ref={form}
-              onSubmit={sendMessage}
-              className="space-y-4"
-              aria-labelledby="contact-form"
-            >
-              <div>
-                <label
-                  htmlFor="name"
-                  className="flex items-center mb-2 text-zinc-900 dark:text-zinc-100"
-                >
-                  Name{" "}
-                  <svg
-                    width="7"
-                    height="7"
-                    className="ml-1"
-                    viewBox="0 0 7 7"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
+                <div className="flex h-6 w-6 items-center justify-center rounded-full bg-lightmode text-white dark:bg-darkmode">
+                  <svg width="14" height="14" viewBox="0 0 20 20" fill="none">
                     <path
-                      d="M3.11222 6.04545L3.20668 3.94744L1.43679 5.08594L0.894886 4.14134L2.77415 3.18182L0.894886 2.2223L1.43679 1.2777L3.20668 2.41619L3.11222 0.318182H4.19105L4.09659 2.41619L5.86648 1.2777L6.40838 2.2223L4.52912 3.18182L6.40838 4.14134L5.86648 5.08594L4.09659 3.94744L4.19105 6.04545H3.11222Z"
-                      fill="#EF4444"
+                      d="M5 10.5L8.5 14L15 7"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
                     />
                   </svg>
+                </div>
+                <p className="text-sm font-medium">
+                  Message sent successfully. I’ll get back to you shortly.
+                </p>
+              </div>
+            )}
+
+            {errorMessage && (
+              <div
+                className="mb-6 rounded-lg border border-red-300 bg-red-50 px-4 py-3 text-red-700"
+                role="alert"
+              >
+                <p className="text-sm font-medium">{errorMessage}</p>
+              </div>
+            )}
+
+            <form ref={form} onSubmit={sendMessage} className="space-y-4">
+              <div>
+                <label className="flex items-center mb-2 text-zinc-900 dark:text-zinc-100">
+                  Name <span className="ml-1 text-red-500">*</span>
                 </label>
                 <input
-                  id="name"
-                  type="text"
                   name="name"
                   required
-                  aria-required="true"
                   className="w-full border rounded-md px-4 py-2 bg-white dark:bg-zinc-100 focus:ring-2 focus:ring-lightmode dark:focus:ring-darkmode outline-none text-black"
                 />
               </div>
 
               <div>
-                <label
-                  htmlFor="email"
-                  className="flex items-center mb-2 text-zinc-900 dark:text-zinc-100"
-                >
-                  Email{" "}
-                  <svg
-                    width="7"
-                    height="7"
-                    className="ml-1"
-                    viewBox="0 0 7 7"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M3.11222 6.04545L3.20668 3.94744L1.43679 5.08594L0.894886 4.14134L2.77415 3.18182L0.894886 2.2223L1.43679 1.2777L3.20668 2.41619L3.11222 0.318182H4.19105L4.09659 2.41619L5.86648 1.2777L6.40838 2.2223L4.52912 3.18182L6.40838 4.14134L5.86648 5.08594L4.09659 3.94744L4.19105 6.04545H3.11222Z"
-                      fill="#EF4444"
-                    />
-                  </svg>
+                <label className="flex items-center mb-2 text-zinc-900 dark:text-zinc-100">
+                  Email <span className="ml-1 text-red-500">*</span>
                 </label>
                 <input
                   type="email"
-                  id="email"
                   name="email"
                   required
-                  aria-required="true"
                   className="w-full border rounded-md px-4 py-2 bg-white dark:bg-zinc-100 focus:ring-2 focus:ring-lightmode dark:focus:ring-darkmode outline-none text-black"
                 />
               </div>
 
               <div>
-                <label
-                  htmlFor="message"
-                  className="flex items-center mb-2 text-zinc-900 dark:text-zinc-100"
-                >
-                  Message{" "}
-                  <svg
-                    width="7"
-                    height="7"
-                    className="ml-1"
-                    viewBox="0 0 7 7"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M3.11222 6.04545L3.20668 3.94744L1.43679 5.08594L0.894886 4.14134L2.77415 3.18182L0.894886 2.2223L1.43679 1.2777L3.20668 2.41619L3.11222 0.318182H4.19105L4.09659 2.41619L5.86648 1.2777L6.40838 2.2223L4.52912 3.18182L6.40838 4.14134L5.86648 5.08594L4.09659 3.94744L4.19105 6.04545H3.11222Z"
-                      fill="#EF4444"
-                    />
-                  </svg>
+                <label className="flex items-center mb-2 text-zinc-900 dark:text-zinc-100">
+                  Message <span className="ml-1 text-red-500">*</span>
                 </label>
                 <textarea
-                  id="message"
                   name="message"
                   required
                   rows="4"
-                  aria-required="true"
-                  className="w-full border rounded-md px-4 py-2 bg-white dark:bg-zinc-100 focus:ring-2 focus:ring-lightmode dark:focus:ring-darkmode outline-none text-black"
+                  className="w-full border rounded-md px-4 py-2 bg-white dark:bg-zinc-100 focus:ring-2 focus:ring-lightmode dark:focus:ring-darkmode outline-none text-black resize-none"
                 />
               </div>
 
-              <FormButton type="submit">Send Message</FormButton>
+              <FormButton type="submit" disabled={isSubmitting}>
+                {isSubmitting ? "Sending..." : "Send Message"}
+              </FormButton>
             </form>
           </div>
         </div>

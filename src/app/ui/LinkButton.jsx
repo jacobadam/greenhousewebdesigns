@@ -4,12 +4,13 @@ import Link from "next/link";
 
 export default function LinkButton({
   variant = "primary",
+  width = "w-32",
   className = "",
   children,
   ...props
 }) {
   const base =
-    "inline-flex items-center justify-center h-11 px-5 text-sm font-semibold rounded w-32 transition-all duration-300";
+    "inline-flex items-center justify-center h-11 px-5 text-sm font-semibold rounded transition-all duration-300";
 
   const variants = {
     primary:
@@ -26,7 +27,10 @@ export default function LinkButton({
   };
 
   return (
-    <Link className={`${base} ${variants[variant]} ${className}`} {...props}>
+    <Link
+      className={`${base} ${variants[variant]} ${width} ${className}`}
+      {...props}
+    >
       {children}
     </Link>
   );

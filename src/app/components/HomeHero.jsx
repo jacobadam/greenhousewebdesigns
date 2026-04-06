@@ -52,8 +52,14 @@ export default function HomepageHero() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 mt-10 w-full sm:w-auto">
-                <LinkButton href="/services">Services</LinkButton>
-                <LinkButton href="/contact" variant="secondary">
+                <LinkButton href="/services" width="w-full sm:w-48 lg:w-36">
+                  Services
+                </LinkButton>
+                <LinkButton
+                  href="/contact"
+                  width="w-full sm:w-48 lg:w-36"
+                  variant="secondary"
+                >
                   Get a Quote
                 </LinkButton>
               </div>

@@ -10,7 +10,7 @@ export default function LinkButton({
   ...props
 }) {
   const base =
-    "inline-flex items-center justify-center h-11 px-5 text-sm font-semibold rounded transition-all duration-300";
+    "flex items-center justify-center h-11 px-5 text-sm font-semibold rounded transition-all duration-300";
 
   const variants = {
     primary:

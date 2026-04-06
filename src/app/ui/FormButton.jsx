@@ -12,15 +12,15 @@ export default function FormButton({
   const variants = {
     primary:
       "bg-lightmode text-white border border-lightmode " +
-      "hover:bg-lightmode/85 hover:-translate-y-0.5 hover:shadow-md " +
+      "hover:bg-lightmode-secondary hover:-translate-y-0.5 hover:shadow-md " +
       "dark:bg-darkmode dark:border-darkmode " +
-      "dark:hover:bg-darkmode/85 dark:hover:shadow-lg",
+      "dark:hover:bg-darkmode-secondary dark:hover:shadow-lg",
 
     secondary:
       "bg-transparent text-lightmode border border-lightmode " +
-      "hover:bg-lightmode hover:text-white hover:-translate-y-0.5 hover:shadow-md " +
+      "hover:bg-lightmode-secondary hover:text-white hover:-translate-y-0.5 hover:shadow-md " +
       "dark:text-darkmode dark:border-darkmode " +
-      "dark:hover:bg-darkmode dark:hover:text-white dark:hover:shadow-lg",
+      "dark:hover:bg-darkmode-secondary dark:hover:text-white dark:hover:shadow-lg",
   };
 
   return (

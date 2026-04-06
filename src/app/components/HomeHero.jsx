@@ -14,7 +14,7 @@ export default function HomepageHero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div className="w-full text-center lg:text-left">
             <motion.h1
-              className="block w-full text-4xl sm:text-6xl md:text-7xl lg:text-6xl text-foreground font-extrabold leading-[1.1] tracking-tight"
+              className="block w-full text-5xl sm:text-6xl md:text-7xl lg:text-6xl text-foreground font-extrabold leading-[1.1] tracking-tight"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
             >

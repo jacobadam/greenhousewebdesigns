@@ -4,11 +4,11 @@ import LinkButton from "../ui/LinkButton";
 
 export default function About() {
   return (
-    <section className="relative pt-28 lg:pt-8">
+    <section className="pt-28 lg:pt-4 pb-20 relative bg-transparent grow">
       <div className="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto py-12 lg:py-24">
         <div className="w-full flex-col justify-start items-start lg:gap-12 gap-10 inline-flex">
           <div className="w-full flex-col justify-start items-center gap-3 flex">
-            <h1 className="text-center text-black dark:text-white text-3xl md:text-4xl xl:text-5xl font-bold font-manrope leading-normal">
+            <h1 className="text-zinc-800 dark:text-zinc-200 text-3xl md:text-4xl xl:text-5xl font-semibold leading-snug">
               About Us
             </h1>
             <p className="max-w-xl text-center text-zinc-900 dark:text-zinc-100 text-lg font-normal leading-relaxed">

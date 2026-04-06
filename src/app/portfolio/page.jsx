@@ -41,7 +41,7 @@ export default function Portfolio() {
       <div className="w-full max-w-7xl px-6 lg:px-8 mx-auto py-12 lg:py-24">
         <div className="mb-8 text-center">
           <div className="flex items-center justify-between gap-5 flex-col mb-14">
-            <h2 className="text-black dark:text-white text-3xl md:text-4xl xl:text-5xl font-semibold leading-snug">
+            <h2 className="text-zinc-800 dark:text-zinc-200 text-3xl md:text-4xl xl:text-5xl font-semibold leading-snug">
               Portfolio
             </h2>
             <p className="font-normal text-lg text-zinc-900 dark:text-zinc-100 max-w-3xl text-center">

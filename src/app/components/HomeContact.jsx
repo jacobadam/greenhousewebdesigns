@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import Button from "../ui/LinkButton";
+import FormButton from "../ui/FormButton";
 
 export default function HomeContact() {
   const form = useRef();
@@ -43,7 +43,7 @@ export default function HomeContact() {
         </h1>
         <p className="text-zinc-900 dark:text-zinc-100 lg:max-w-3xl lg:mx-auto text-lg md:text-xl">
           Have a project in mind or need help with your website? Get in touch
-          and I’ll get back to you shortly.
+          and I&apos;ll get back to you shortly.
         </p>
       </div>
 
@@ -159,7 +159,7 @@ export default function HomeContact() {
         </div>
 
         <div className="mt-8 lg:mt-4">
-          <Button href="/services">Submit</Button>
+          <FormButton type="submit">Send Message</FormButton>
         </div>
       </form>
     </div>

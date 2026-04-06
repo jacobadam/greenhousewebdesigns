@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef, useState } from "react";
-import Button from "../ui/LinkButton";
+import FormButton from "../ui/FormButton";
 
 export default function Contact() {
   const form = useRef();
@@ -192,7 +192,7 @@ export default function Contact() {
                 />
               </div>
 
-              <Button href="/services">Submit</Button>
+              <FormButton type="submit">Send Message</FormButton>
             </form>
           </div>
         </div>

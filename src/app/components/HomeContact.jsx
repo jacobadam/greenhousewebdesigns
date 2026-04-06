@@ -49,7 +49,7 @@ export default function HomeContact() {
   return (
     <div className="h-full w-full flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 bg-transparent py-24 lg:py-12">
       <div className="mb-14 text-center">
-        <h1 className="text-3xl md:text-4xl xl:text-5xl font-bold text-black mb-5">
+        <h1 className="text-3xl md:text-4xl xl:text-5xl font-bold text-black dark:text-white mb-5">
           Contact
         </h1>
         <p className="text-zinc-900 dark:text-zinc-100 text-lg md:text-xl max-w-3xl mx-auto">
@@ -75,7 +75,7 @@ export default function HomeContact() {
               </svg>
             </div>
             <p className="text-sm font-medium">
-              Message sent successfully. I’ll get back to you shortly.
+              Message sent successfully. I&apos;ll get back to you shortly.
             </p>
           </div>
         )}

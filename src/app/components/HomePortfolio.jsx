@@ -15,7 +15,7 @@ export default function HomePortfolio() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
           <a
             href="https://www.animalshepherd.org/en"
             target="_blank"
@@ -157,7 +157,7 @@ export default function HomePortfolio() {
             </div>
           </a>
         </div>
-        <div className="flex items-center justify-center mt-8 lg:mt-4">
+        <div className="flex items-center justify-center lg:mt-4">
           <Button href="/services">View all</Button>
         </div>
       </div>

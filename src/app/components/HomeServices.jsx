@@ -1,5 +1,5 @@
 import HomeServicesCard from "./HomeServicesCard";
-import Button from "../ui/LinkButton";
+import LinkButton from "../ui/LinkButton";
 
 export default function HomeServices() {
   return (
@@ -15,7 +15,7 @@ export default function HomeServices() {
               Discover a range of solutions tailored to meet your business needs
             </p>
 
-            <Button href="/contact">Get a Quote</Button>
+            <LinkButton href="/contact">Get a Quote</LinkButton>
           </div>
 
           <div>

@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Button from "../ui/LinkButton";
+import LinkButton from "../ui/LinkButton";
 
 export default function About() {
   return (
@@ -55,7 +55,7 @@ export default function About() {
                   from you.
                 </p>
               </div>
-              <Button href="/contact">Let&apos;s Talk</Button>
+              <LinkButton href="/contact">Let&apos;s Talk</LinkButton>
             </div>
           </div>
         </div>

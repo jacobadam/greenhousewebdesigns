@@ -2,7 +2,7 @@
 
 import { motion } from "motion/react";
 import Image from "next/image";
-import Button from "../ui/LinkButton";
+import LinkButton from "../ui/LinkButton";
 
 export default function HomepageHero() {
   const text = "Web Designs That Grow With Your Business";
@@ -52,10 +52,10 @@ export default function HomepageHero() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 mt-10 w-full sm:w-auto">
-                <Button href="/services">Services</Button>
-                <Button href="/contact" variant="secondary">
+                <LinkButton href="/services">Services</LinkButton>
+                <LinkButton href="/contact" variant="secondary">
                   Get a Quote
-                </Button>
+                </LinkButton>
               </div>
             </div>
           </div>

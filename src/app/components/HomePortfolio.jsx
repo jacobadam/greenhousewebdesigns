@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Button from "../ui/LinkButton";
+import LinkButton from "../ui/LinkButton";
 
 export default function HomePortfolio() {
   return (
@@ -158,7 +158,7 @@ export default function HomePortfolio() {
           </a>
         </div>
         <div className="flex items-center justify-center lg:mt-4">
-          <Button href="/services">View all</Button>
+          <LinkButton href="/services">View all</LinkButton>
         </div>
       </div>
     </section>

@@ -1,5 +1,5 @@
 import HomeServicesCard from "./HomeServicesCard";
-import Button from "../ui/Button";
+import Button from "../ui/LinkButton";
 
 export default function HomeServices() {
   return (

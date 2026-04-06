@@ -1,13 +1,15 @@
 "use client";
 
-export default function Button({
+import Link from "next/link";
+
+export default function LinkButton({
   variant = "primary",
   className = "",
   children,
   ...props
 }) {
   const base =
-    "inline-flex items-center justify-center h-11 px-5 text-sm font-semibold transition-colors duration-200 rounded";
+    "inline-flex items-center justify-center h-11 px-5 text-sm font-semibold transition-colors duration-200 rounded w-32";
 
   const variants = {
     primary:
@@ -24,8 +26,8 @@ export default function Button({
   };
 
   return (
-    <a className={`${base} ${variants[variant]} ${className}`} {...props}>
+    <Link className={`${base} ${variants[variant]} ${className}`} {...props}>
       {children}
-    </a>
+    </Link>
   );
 }

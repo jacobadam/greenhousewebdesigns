@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef, useState } from "react";
-import Button from "../ui/Button";
+import Button from "../ui/LinkButton";
 
 export default function Contact() {
   const form = useRef();

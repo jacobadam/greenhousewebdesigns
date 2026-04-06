@@ -2,7 +2,7 @@
 
 import { motion } from "motion/react";
 import Image from "next/image";
-import Button from "../ui/Button";
+import Button from "../ui/LinkButton";
 
 export default function HomepageHero() {
   const text = "Web Designs That Grow With Your Business";

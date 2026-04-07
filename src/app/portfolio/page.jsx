@@ -70,10 +70,10 @@ export default function Portfolio() {
 
                 <div className="absolute bottom-0 left-0 z-10 py-7 px-6 flex justify-between flex-col transition-all duration-500 transform translate-y-full group-hover:translate-y-0 group-focus-within:translate-y-0 group-active:translate-y-0 group-hover:w-full group-hover:h-full group-hover:bg-black/80 group-focus-within:w-full group-focus-within:h-full group-focus-within:bg-black/90 group-active:w-full group-active:h-full group-active:bg-black/50 pointer-events-none group-focus-within:pointer-events-auto group-active:pointer-events-auto rounded">
                   <div className="block">
-                    <h6 className="text-xl font-bold leading-8 text-white mb-5">
+                    <h6 className="text-base xs:text-xl font-bold leading-4 xs:leading-8 text-white mb-2 xs:mb-5">
                       {title}
                     </h6>
-                    <p className="text-base font-normal text-gray-100 max-w-xl">
+                    <p className="text-xs xs:text-base font-normal text-gray-100 max-w-xl mb-2 xs:mb-0">
                       {description}
                     </p>
                   </div>
@@ -81,7 +81,7 @@ export default function Portfolio() {
                     href={url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="cursor-pointer group flex items-center gap-2 text-base font-semibold text-white transition-all duration-500 pointer-events-auto"
+                    className="cursor-pointer group flex items-center gap-2 text-xs xs:text-base font-semibold text-white transition-all duration-500 pointer-events-auto"
                   >
                     View Website
                     <svg

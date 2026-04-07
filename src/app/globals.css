@@ -18,6 +18,8 @@
 }
 
 @theme {
+  --breakpoint-xs: 30rem;
+
   --color-lightmode: #5f9361;
   --color-darkmode: #6366f1;
   --color-lightmode-secondary: #4f7f52;

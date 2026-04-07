@@ -37,8 +37,8 @@ export default function Portfolio() {
   ];
 
   return (
-    <section className="pt-28 lg:pt-4 pb-20 relative bg-transparent grow">
-      <div className="w-full max-w-7xl px-6 lg:px-8 mx-auto py-12 lg:py-24">
+    <section className="pt-28 lg:pt-4 pb-8 relative bg-transparent grow">
+      <div className="w-full max-w-7xl px-3 lg:px-8 mx-auto py-12 lg:py-24">
         <div className="mb-8 text-center">
           <div className="flex items-center justify-between gap-5 flex-col mb-14">
             <h2 className="text-zinc-800 dark:text-zinc-200 text-3xl md:text-4xl xl:text-5xl font-semibold leading-snug">
@@ -50,7 +50,7 @@ export default function Portfolio() {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8 md:p-8 bg-zinc-100 dark:bg-zinc-950">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 md:p-8 bg-zinc-100 dark:bg-zinc-950">
           {portfolioData.map(
             ({ src, altText, title, description, url }, id) => (
               <div
@@ -58,11 +58,12 @@ export default function Portfolio() {
                 className="relative overflow-hidden group rounded"
                 tabIndex={0}
               >
-                <div className="w-80 h-80">
+                <div className="relative flex items-center justify-center">
                   <Image
                     src={src}
                     alt={altText}
-                    fill
+                    width={600}
+                    height={600}
                     className="object-cover transition-all duration-700 group-hover:scale-110 group-focus-within:scale-110 group-active:scale-110"
                   />
                 </div>

@@ -47,7 +47,7 @@ export default function HomeContact() {
   };
 
   return (
-    <div className="h-full w-full flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 bg-transparent py-24 lg:py-12">
+    <div className="h-full w-full flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 bg-transparent pt-24 py-12 lg:py-12">
       <div className="mb-14 text-center">
         <h1 className="text-3xl md:text-4xl xl:text-5xl font-bold text-black dark:text-white mb-5">
           Contact

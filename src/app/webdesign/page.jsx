@@ -35,7 +35,7 @@ export default function WebDesign() {
 
   return (
     <section className="relative bg-transparent h-fit">
-      <div className="relative mx-auto grid h-full w-full max-w-7xl grid-cols-1 gap-0 md:gap-8 lg:gap-12 px-4 md:grid-cols-2 md:mb-8">
+      <div className="relative mx-auto grid h-full w-full max-w-7xl grid-cols-1 gap-0 md:gap-8 lg:gap-12 px-4 md:grid-cols-2 md:mb-8 pb-12">
         <div className="flex h-fit w-full flex-col justify-center md:sticky md:top-0 text-center md:max-h-screen pt-36 mb-8 lg:mb-0">
           <h1 className="mb-4 text-3xl md:text-4xl xl:text-5xl font-semibold leading-tight text-black dark:text-white text-center">
             What Is Web Design And What Are The Benefits?

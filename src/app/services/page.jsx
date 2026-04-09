@@ -2,7 +2,7 @@ import { FiCheckCircle, FiXSquare } from "react-icons/fi";
 
 export default function Services() {
   return (
-    <section className="pt-28 lg:pt-4 pb-20 relative bg-transparent grow">
+    <section className="pt-28 lg:pt-4 relative bg-transparent grow">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 lg:py-24">
         <div className="mb-4 lg:mb-8 text-center">
           <div className="flex items-center justify-between gap-5 flex-col mb-14">

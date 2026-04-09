@@ -154,9 +154,11 @@ export default function Contact() {
                 />
               </div>
 
-              <FormButton type="submit" disabled={isSubmitting}>
-                {isSubmitting ? "Sending..." : "Send Message"}
-              </FormButton>
+              <div className="mt-8 lg:mt-4">
+                <FormButton type="submit" disabled={isSubmitting}>
+                  {isSubmitting ? "Sending..." : "Send Message"}
+                </FormButton>
+              </div>
             </form>
           </div>
         </div>

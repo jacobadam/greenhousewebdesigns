@@ -39,10 +39,10 @@ export default function NavBar() {
 
   return (
     <nav
-      className={`bg-black fixed top-0 z-20 overflow-hidden border-white/10 bg-linear-to-br from-white/20 to-white/5 backdrop-blur px-2 sm:px-4 transition-all duration-300 w-auto ${
+      className={`bg-[#8e898925] dark:bg-[#FFFFFF1A] backdrop-blur-2xl lg:backdrop-blur-sm fixed top-0 z-20 overflow-hidden px-2 sm:px-4 transition-all duration-300 w-auto ${
         isScrolled
           ? "left-0 right-0"
-          : "mx-auto left-2 right-2 top-6 rounded-xl"
+          : "mx-auto left-4 right-4 top-4 rounded-xl"
       }`}
     >
       <div className="flex items-center justify-between">
@@ -50,7 +50,7 @@ export default function NavBar() {
           <img
             src="/greenhouse-logo.svg"
             alt="Greenhouse Web Designs Logo"
-            className="w-32 h-12"
+            className="w-32 h-12 invert dark:invert-0"
           />
         </Link>
 
@@ -62,11 +62,11 @@ export default function NavBar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`relative text-md font-medium transition-colors duration-200
+                className={`relative text-md font-semibold transition-colors duration-200
                   ${
                     isActive
                       ? "text-lightmode dark:text-darkmode"
-                      : "text-white hover:text-lightmode dark:hover:text-darkmode"
+                      : "text-black dark:text-white hover:text-lightmode dark:hover:text-darkmode"
                   }
                 `}
               >
@@ -97,7 +97,7 @@ export default function NavBar() {
       </div>
 
       {isMobileMenuOpen && (
-        <div className="lg:hidden backdrop-blur px-2">
+        <div className="lg:hidden px-2">
           <ul className="flex flex-col items-start space-y-4 py-4 text-left">
             {navLinks.map((link) => {
               const isActive = pathname === link.href;
@@ -110,7 +110,7 @@ export default function NavBar() {
                       ${
                         isActive
                           ? "text-lightmode dark:text-darkmode"
-                          : "text-white hover:text-lightmode dark:hover:text-darkmode"
+                          : "text-black dark:text-white hover:text-lightmode dark:hover:text-darkmode"
                       }
                     `}
                     onClick={() => {
